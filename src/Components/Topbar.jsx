@@ -5,7 +5,7 @@ import { LuBellDot, LuSearch } from 'react-icons/lu'
 
 function Topbar() {
   return (
-    <div className='w-full py-4 px-5 flex items-center justify-between'>
+    <div className='w-full py-4 px-5 flex items-center justify-between z-30 bg-main-body/80 backdrop-blur-lg'>
         {/* logo */}
         <div className='flex items-center justify-center'>
             <img src={MainLogo} className="h-6" />

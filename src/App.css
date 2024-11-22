@@ -7,6 +7,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body{
+  background-color: #f1efee;
+}
+
 .card1 {
   width: 50%;
   background-color: #ffffff;

@@ -9,7 +9,7 @@ function Overview() {
       <Topbar />
       <div className="w-full flex items-start justify-between">
         <Leftbar />
-        <div className="flex-1 flex items-center justify-center figure">
+        <div className="flex-1 h-full min-h-svh mt-[-80px] pt-[100px] flex items-center justify-center figure">
           <img src="./single-removebg-preview.png" alt="" />
         </div>
         <Rightbar />
