@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+.card1 {
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  justify-content: space-between;
+}
+.card2 {
+  width: 100%;
+  background-color: #66b2a0;
+  border-radius: 15px;
+  padding: 15px;
+}
+.figure {
+  /* background-color: #66B2A0; */
+}
+
+.left {
+}
+
+.fluenza {
+  /* background-color: red; */
+  width: 300px;
+}
+
+.circle {
+  border-radius: 50px;
+}
+
+.roundedz {
+  border-radius: 15px;
+  background-color: #e8e8e8;
+}
+
+.datez {
+  width: 100%;
+  padding: 15px;
+}
+
+.card3 {
+  background-color: rgba(255, 255, 255, 0.916);
+  padding: 15px;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.borderz {
+  border-bottom: 1px solid rgba(68, 67, 67, 0.379);
+  padding-bottom: 5px;
+}
+
+.doc {
+  margin-top: 5px;
+}
