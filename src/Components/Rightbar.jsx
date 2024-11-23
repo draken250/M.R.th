@@ -42,7 +42,7 @@ function Rightbar() {
 
   return (
     <div
-      className={`px-5 flex flex-col relative  ${
+      className={`px-5 flex flex-col relative overflow-y-auto  ${
         width === "big" ? "w-[400px]" : "w-[0] transition-all duration-300"
       }`}
     >
