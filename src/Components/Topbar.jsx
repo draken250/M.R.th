@@ -12,11 +12,11 @@ function Topbar() {
         </div>
         {/* links */}
         <div className='flex items-center justify-center gap-2'>
-            <Link to="/Overview.jsx" className='px-5 py-2.5 rounded-full bg-main-color text-white text-sm'>Overview</Link>
-            <Link to="/Patient.jsx" className='px-5 py-2.5 rounded-full bg-white text-sm'>Patient chart</Link>
-            <Link to="/Calendar.jsx" className='px-5 py-2.5 rounded-full bg-white text-sm'>Calendar</Link>
-            <Link to="/Doctors.jsx" className='px-5 py-2.5 rounded-full bg-white text-sm'>Doctors</Link>
-            <Link to="/Messages.jsz" className='px-5 py-2.5 rounded-full bg-white text-sm'>Messages</Link>
+            <Link to="/" className='px-5 py-2.5 rounded-full bg-main-color text-white text-sm'>Overview</Link>
+            <Link to="/" className='px-5 py-2.5 rounded-full bg-white text-sm'>Patient chart</Link>
+            <Link to="/" className='px-5 py-2.5 rounded-full bg-white text-sm'>Calendar</Link>
+            <Link to="/" className='px-5 py-2.5 rounded-full bg-white text-sm'>Doctors</Link>
+            <Link to="/" className='px-5 py-2.5 rounded-full bg-white text-sm'>Messages</Link>
         </div>
         {/* profile & notification */}
         <div className='w-fit h-full flex items-center justify-center gap-2'>
