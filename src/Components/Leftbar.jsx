@@ -23,19 +23,23 @@ function Leftbar() {
 
   return (
     <div
-      className={`px-5 flex flex-col relative  ${
+      className={`px-5 flex flex-col relative text-[#111111] dark:text-text-dark  ${
         width === "big" ? "w-[400px]" : "w-[0] transition-all duration-300"
       }`}
     >
       {/* toggler */}
       <button
         onClick={handleWidth}
-        className={`absolute top-[10px] ${width === "big" ? 'right-[-40px]' : 'right-[-20px]'} text-black/40 hover:text-main-color bg-white h-[40px] w-auto flex items-center justify-center text-xl aspect-square rounded-full`}
+        className={`absolute top-[10px] ${
+          width === "big" ? "right-[-40px]" : "right-[-20px]"
+        } text-black/40 hover:text-main-color bg-white dark:bg-dark-gray-dark dark:text-text-dark h-[40px] w-auto flex items-center justify-center text-xl aspect-square rounded-full`}
       >
         <BsLayoutSidebarInset />
       </button>
       <div
-        className={`w-full h-fit flex-col ${width === "big" ? "flex" : "hidden"}`}
+        className={`w-full h-fit flex-col ${
+          width === "big" ? "flex" : "hidden"
+        }`}
       >
         {/* section 1 */}
         <div className="pb-3 flex justify-between">
@@ -47,9 +51,9 @@ function Leftbar() {
         <div className=" ">
           <div className="flex items-start justify-between gap-3 mb-3 w-full">
             {/* box */}
-            <div className="w-full flex bg-white rounded-2xl py-3 px-4 flex-col gap-1">
+            <div className="w-full flex bg-white dark:bg-dark-gray-dark dark:text-text-dark rounded-2xl py-3 px-4 flex-col gap-1">
               <div className="flex items-center justify-start gap-2 mb-2">
-                <div className="h-8 w-auto aspect-square rounded-full bg-main-body flex items-center justify-center">
+                <div className="h-8 w-auto aspect-square rounded-full bg-main-body dark:bg-text-dark/10 dark:text-text-dark flex items-center justify-center">
                   <LuStethoscope className="opacity-60" />
                 </div>
                 <h3 className=" font-semibold text-xs uppercase">
@@ -60,9 +64,9 @@ function Leftbar() {
               <p className="text-xs font-medium">Initial exam: influenza</p>
             </div>
             {/* box */}
-            <div className="w-full flex bg-white rounded-2xl py-3 px-4 flex-col gap-1">
+            <div className="w-full flex bg-white dark:bg-dark-gray-dark dark:text-text-dark rounded-2xl py-3 px-4 flex-col gap-1">
               <div className="flex items-center justify-start gap-2 mb-2">
-                <div className="h-8 w-auto aspect-square rounded-full bg-main-body flex items-center justify-center">
+                <div className="h-8 w-auto aspect-square rounded-full bg-main-body dark:bg-text-dark/10 dark:text-text-dark flex items-center justify-center">
                   <LiaLaptopMedicalSolid className="opacity-60" />
                 </div>
                 <h3 className=" font-semibold text-xs uppercase">PROTOCOLS</h3>
@@ -98,17 +102,17 @@ function Leftbar() {
           </button>
         </div>
         <div className=" py-3">
-          <div className="flex items-center justify-between bg-[#e5e0dd] mb-3 p-[4px] rounded-full">
-            <button className=" text-main-color bg-white h-[40px] w-auto flex items-center justify-center text-xl aspect-square rounded-full">
+          <div className="flex items-center justify-between bg-[#e5e0dd] dark:bg-dark-gray-dark dark:text-text-dark mb-3 p-[4px] rounded-full">
+            <button className=" text-main-color bg-white  dark:bg-text-dark/10 dark:text-text-dark h-[40px] w-auto flex items-center justify-center text-xl aspect-square rounded-full">
               <LuChevronLeft />
             </button>
             <span className=" font-normal uppercase text-sm">August 30</span>
-            <button className=" text-main-color bg-white h-[40px] w-auto flex items-center justify-center text-xl aspect-square rounded-full">
+            <button className=" text-main-color bg-white dark:bg-text-dark/10 dark:text-text-dark h-[40px] w-auto flex items-center justify-center text-xl aspect-square rounded-full">
               <LuChevronRight />
             </button>
           </div>
           {/* box */}
-          <div className="w-full h-fit flex gap-3 mb-3 bg-white rounded-xl p-3 ">
+          <div className="w-full h-fit flex gap-3 mb-3 bg-white dark:bg-dark-gray-dark dark:text-text-dark rounded-xl p-3 ">
             {/* light */}
             <div className="min-h-full w-[5px] rounded-md bg-link-color"></div>
             {/* content */}
@@ -119,7 +123,8 @@ function Leftbar() {
               <p className="font-semibold text-base my-2">
                 Consultation: surgery preparation
               </p>
-              <hr className="bg-dark-gray mb-3" />
+              {/* separetor */}
+              <div className="h-[1px] w-full bg-dark-gray dark:bg-text-dark/15 mb-3" />
               <div className="flex justify-between doc gap-3">
                 <div className="flex gap-3">
                   <img src={Doc1} alt="" className="w-10 h-10 rounded-full" />
@@ -142,7 +147,7 @@ function Leftbar() {
           </div>
 
           {/* box */}
-          <div className="w-full h-fit flex gap-3 mb-3 bg-white rounded-xl p-3 ">
+          <div className="w-full h-fit flex gap-3 mb-3 bg-white dark:bg-dark-gray-dark dark:text-text-dark rounded-xl p-3 ">
             {/* light */}
             <div className="min-h-full w-[5px] rounded-md bg-khaki"></div>
             {/* content */}
@@ -153,7 +158,8 @@ function Leftbar() {
               <p className="font-semibold text-base my-2">
                 Consultation: surgery preparation twenty one memes marathon
               </p>
-              <hr className="bg-dark-gray mb-3" />
+              {/* separetor */}
+              <div className="h-[1px] w-full bg-dark-gray dark:bg-text-dark/15 mb-3" />
               <div className="flex justify-between doc gap-3">
                 <div className="flex gap-3">
                   <img src={Doc2} alt="" className="w-10 h-10 rounded-full" />

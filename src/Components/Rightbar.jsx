@@ -42,7 +42,7 @@ function Rightbar() {
 
   return (
     <div
-      className={`px-5 flex flex-col relative overflow-y-auto  ${
+      className={`px-5 flex flex-col relative text-[#111111] dark:text-text-dark ${
         width === "big" ? "w-[400px]" : "w-[0] transition-all duration-300"
       }`}
     >
@@ -51,7 +51,7 @@ function Rightbar() {
         onClick={handleWidth}
         className={`absolute top-[10px] ${
           width === "big" ? "left-[-40px]" : "left-[-20px]"
-        } text-black/40 hover:text-main-color bg-white h-[40px] w-auto flex items-center justify-center text-xl aspect-square rounded-full`}
+        } text-black/40 hover:text-main-color bg-white dark:bg-dark-gray-dark dark:text-text-dark h-[40px] w-auto flex items-center justify-center text-xl aspect-square rounded-full`}
       >
         <BsLayoutSidebarInsetReverse />
       </button>
@@ -60,11 +60,11 @@ function Rightbar() {
           width === "big" ? "flex" : "hidden"
         }`}
       >
-        <div className="flex  mb-3 card3 ">
+        <div className="flex mb-3 card3 dark:bg-dark-gray-dark dark:text-text-dark ">
           <div className="">
             <h3 className="  font-bold  text-xl capitalize pb-1">fluenza</h3>
             <div className=" flex ">
-              <p className=" text-black/50 text-sm font-semibold ">
+              <p className=" text-sm font-medium ">
                 Last update:{" "}
                 <a className="font-normal capitalize text-link-color" href="">
                   thur 21/24 02:30 PM{" "}
@@ -82,7 +82,7 @@ function Rightbar() {
             </div>
           </div>
         </div>
-        <div className="mb-3 felx flex-col bg-white rounded-2xl p-4 ">
+        <div className="mb-3 felx flex-col bg-white dark:bg-dark-gray-dark dark:text-text-dark rounded-2xl p-4 ">
           <div className="flex flex-col gap-2">
             <h3 className="  font-medium uppercase text-sm">
               Doctor in charge:
@@ -112,7 +112,7 @@ function Rightbar() {
         <div className="grid grid-cols-2 gap-3 w-full">
           {/* Med box */}
           {Meds.map((med, index) => (
-            <div className="flex flex-col gap-2 w-full bg-white rounded-2xl p-3">
+            <div className="flex flex-col gap-2 w-full bg-white dark:bg-dark-gray-dark dark:text-text-dark rounded-2xl p-3">
               <div className="flex w-full items-center justify-between">
                 <div className="">
                   <h3 className=" font-semibold text-sm capitalize">
@@ -139,9 +139,9 @@ function Rightbar() {
         <div className="mt-4 mb-2 flex justify-between">
           <h2 className=" font-bold clear-start">Additional documentation</h2>
         </div>
-        <div className="bg-white mb-2 flex items-center w-full p-1 rounded-full ">
+        <div className="bg-white dark:bg-dark-gray-dark dark:text-text-dark mb-2 flex items-center w-full p-1 rounded-full ">
           <div className=" flex gap-3 items-center ">
-            <div className="bg-dark-gray h-9 w-auto aspect-square rounded-full flex items-center justify-center">
+            <div className="bg-dark-gray dark:bg-text-dark/10 dark:text-text-dark h-9 w-auto aspect-square rounded-full flex items-center justify-center">
               <LuFile className="opacity-40" />
             </div>
             <div className="">
@@ -149,9 +149,9 @@ function Rightbar() {
             </div>
           </div>
         </div>
-        <div className="bg-white mb-2 flex items-center w-full p-1 rounded-full ">
+        <div className="bg-white dark:bg-dark-gray-dark dark:text-text-dark mb-2 flex items-center w-full p-1 rounded-full ">
           <div className=" flex gap-3 items-center ">
-            <div className="bg-dark-gray h-9 w-auto aspect-square rounded-full flex items-center justify-center">
+            <div className="bg-dark-gray dark:bg-text-dark/10 dark:text-text-dark h-9 w-auto aspect-square rounded-full flex items-center justify-center">
               <LuFile className="opacity-40" />
             </div>
             <div className="">
@@ -159,9 +159,9 @@ function Rightbar() {
             </div>
           </div>
         </div>
-        <div className="bg-white mb-2 flex items-center w-full p-1 rounded-full ">
+        <div className="bg-white dark:bg-dark-gray-dark dark:text-text-dark mb-2 flex items-center w-full p-1 rounded-full ">
           <div className=" flex gap-3 items-center ">
-            <div className="bg-dark-gray h-9 w-auto aspect-square rounded-full flex items-center justify-center">
+            <div className="bg-dark-gray dark:bg-text-dark/10 dark:text-text-dark h-9 w-auto aspect-square rounded-full flex items-center justify-center">
               <LuFile className="opacity-40" />
             </div>
             <div className="">

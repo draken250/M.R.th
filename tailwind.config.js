@@ -12,6 +12,13 @@ export default {
         "link-color": "#63a3b2",
         "dark-gray": "#e5e0dd",
         "khaki": "#c5b6ae",
+
+        "main-color-dark": "#ef7158",
+        "main-body-dark": "#171717",
+        "link-color-dark": "#63a3b2",
+        "dark-gray-dark": "#232323",
+        "text-dark": "#f1f1f1",
+        "khaki": "#c5b6ae",
       },
     },
   },
