@@ -15,8 +15,8 @@ function Topbar() {
             <Link to="/" className='px-5 py-2.5 rounded-full bg-main-color text-white text-sm'>Overview</Link>
             <Link to="/Patient_chart" className='px-5 py-2.5 rounded-full bg-white dark:bg-dark-gray-dark dark:text-text-dark text-sm'>Patient chart</Link>
             <Link to="/Calendar" className='px-5 py-2.5 rounded-full bg-white dark:bg-dark-gray-dark dark:text-text-dark text-sm'>Calendar</Link>
-            <Link to="/Sport" className='px-5 py-2.5 rounded-full bg-white dark:bg-dark-gray-dark dark:text-text-dark text-sm'>Doctors</Link>
-            <Link to="/Diet" className='px-5 py-2.5 rounded-full bg-white dark:bg-dark-gray-dark dark:text-text-dark text-sm'>Messages</Link>
+            <Link to="/Sport" className='px-5 py-2.5 rounded-full bg-white dark:bg-dark-gray-dark dark:text-text-dark text-sm'>Sport</Link>
+            <Link to="/Diet" className='px-5 py-2.5 rounded-full bg-white dark:bg-dark-gray-dark dark:text-text-dark text-sm'>Diet</Link>
         </div>
         {/* profile & notification */}
         <div className='w-fit h-full flex items-center justify-center gap-2'>
