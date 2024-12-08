@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved Recipes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-black text-white">
+
+  <!-- Header -->
+  <header class="bg-gray-800 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <h1 class="text-lg font-bold">Naluri Masak</h1>
+      <nav>
+        <ul class="flex gap-4">
+          <li><a href="#" class="hover:text-gray-300">Grocery List</a></li>
+          <li><a href="#" class="hover:text-gray-300">Recipe Box</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="bg-gray-900 w-64 p-4">
+      <ul class="space-y-4">
+        <li><a href="#" class="hover:text-gray-300">Dashboard</a></li>
+        <li><a href="#" class="hover:text-gray-300">Cooking Courses</a></li>
+        <li><a href="#" class="hover:text-gray-300">Recently Viewed</a></li>
+        <li><a href="#" class="hover:text-gray-300">Weekly Prep</a></li>
+        <li><a href="#" class="text-orange-500">Saved Recipes</a></li>
+        <li><a href="#" class="hover:text-gray-300">Grocery List</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-4">
+      <!-- Header Section -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+        <div>
+          <h1 class="text-2xl font-semibold">Saved Recipes</h1>
+          <p class="text-gray-400">8 recipes</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 sm:gap-4">
+          <button class="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded hover:bg-gray-700">
+            <span>Filters</span>
+          </button>
+          <button class="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded hover:bg-gray-700">
+            <span>Sort</span>
+          </button>
+          <button class="px-4 py-2 border border-gray-700 rounded hidden sm:block hover:bg-gray-700">
+            ...
+          </button>
+          <button class="flex items-center gap-2 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600">
+            Share
+          </button>
+        </div>
+      </div>
+
+      <!-- Recipe Categories -->
+      <div class="flex gap-4 mb-6">
+        <a href="#" class="text-sm font-semibold text-gray-300 hover:text-orange-500">All Recipes</a>
+        <a href="#" class="text-sm font-semibold text-gray-300 hover:text-orange-500">Breakfasts</a>
+        <a href="#" class="text-sm font-semibold text-gray-300 hover:text-orange-500">Lunches</a>
+        <a href="#" class="text-sm font-semibold text-gray-300 hover:text-orange-500">Desserts</a>
+        <a href="#" class="text-sm font-semibold text-gray-300 hover:text-orange-500">Dinner</a>
+        <a href="#" class="text-sm font-semibold text-gray-300 hover:text-orange-500">Sides</a>
+        <a href="#" class="text-sm font-semibold text-gray-300 hover:text-orange-500">Snacks</a>
+        <a href="#" class="text-sm font-semibold text-gray-300 hover:text-orange-500">Soups</a>
+        <a href="#" class="text-sm font-semibold text-gray-300 hover:text-orange-500">Vegan</a>
+      </div>
+
+      <!-- Recipe Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Recipe Card -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <div class="relative">
+            <img src="https://via.placeholder.com/300" alt="Recipe" class="w-full h-40 object-cover">
+            <button class="absolute bottom-2 left-2 px-2 py-1 bg-white text-white text-xs rounded hover:bg-gray-700">
+              30 mins
+            </button>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">Salad Caprese Pasta Spaghetti</h2>
+            <p class="text-sm text-gray-400">Fresh Salad</p>
+            <p class="text-sm text-gray-400 mt-2">30 mins</p>
+          </div>
+        </div>
+        <!-- Repeat similar cards -->
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <div class="relative">
+            <img src="https://via.placeholder.com/300" alt="Recipe" class="w-full h-40 object-cover">
+            <button class="absolute bottom-2 left-2 px-2 py-1 bg-white text-white text-xs rounded hover:bg-gray-700">
+              30 mins
+            </button>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold">Tuscan Panzanella Cherry</h2>
+            <p class="text-sm text-gray-400">Fresh Salad</p> 
+          </div>
+        </div>
+        <!-- Add more recipes -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>
