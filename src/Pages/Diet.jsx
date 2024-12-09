@@ -6,7 +6,7 @@ function Diet() {
     <div className="flex flex-col items-start justify-start bg-main-body dark:bg-main-body-dark">
       <Topbar />
       <div class="min-h-screen bg-white text-grey">
-        <div class="flex px-5 pb-5 bg-main-body">
+        <div class="flex px-5 pb-5 bg-main-body w-full">
           <aside class="bg-transparent w-56 p-4">
             <ul class="space-y-4">
               <li>
@@ -42,7 +42,7 @@ function Diet() {
             </ul>
           </aside>
 
-          <main class="flex-1 p-7 bg-white rounded-3xl">
+          <main class="flex-1 p-7 bg-white rounded-3xl w-full">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 text-gray-800">
               <div>
                 <h1 class="text-2xl font-semibold">Saved Recipes</h1>
@@ -121,7 +121,7 @@ function Diet() {
               </a>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
               <div class="bg-gray-100 rounded-lg overflow-hidden">
                 <div class="relative">
                   <img
