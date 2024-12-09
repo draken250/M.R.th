@@ -48,12 +48,9 @@ function Diet() {
                 <h1 class="text-2xl font-semibold">Saved Recipes</h1>
                 <p class="text-gray-400">8 recipes</p>
               </div>
-              <div class="flex flex-wrap items-center">
+              <div class="flex flex-wrap items-center gap-2">
                 <button class="flex items-center gap-2 px-5 py-2 text-sm rounded-full hover:bg-stone-200">
                   <span>Filters</span>
-                </button>
-                <button class="flex items-center gap-2 px-5 py-2 text-sm rounded-full hover:bg-stone-200">
-                  <span>Sort</span>
                 </button>
                 <button class="flex items-center gap-2 px-5 py-2 text-sm bg-orange-500 text-white rounded-full hover:bg-main-color">
                   Share
