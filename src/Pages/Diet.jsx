@@ -182,28 +182,26 @@ function Diet() {
                   className="bg-gray-100 rounded-lg overflow-hidden"
                   key={recipe.id}
                 >
-                  <div className="relative">
+                  <div class="relative">
                     <img
                       src={recipe.imgSrc}
-                      alt={recipe.title}
-                      className="w-full h-40 object-cover"
+                      class="w-full h-40 object-cover brightness-90"
                     />
-                    <button className="absolute bottom-2 left-2 px-2 py-1 bg-gray-200 text-black text-xs rounded">
-                      {recipe.time}
+                    <button class="absolute bottom-2 left-2 px-2 py-1 flex items-center gap-1 bg-white shadow text-black/70 text-xs font-medium rounded-full ">
+                      <PiCookingPot />
+                      30 mins
                     </button>
                   </div>
-                  <div className="p-4">
-                    <h2 className="text-lg font-semibold">{recipe.title}</h2>
-                    <p className="text-sm text-gray-400">
-                      {recipe.description}
-                    </p>
+                  <div class="p-4">
+                    <h2 class="text-base font-normal leading-6 mb-2">
+                      Salad Caprese Pasta Spaghetti
+                    </h2>
+                    <p class="text-sm text-black/40">Fresh Salad</p>
                   </div>
                 </div>
               ))}
 
-              <div class="bg-gray-100 rounded-2xl overflow-hidden">
-                
-              </div>
+              <div class="bg-gray-100 rounded-2xl overflow-hidden"></div>
               <div class="bg-gray-100 rounded-lg overflow-hidden">
                 <div class="relative">
                   <img
