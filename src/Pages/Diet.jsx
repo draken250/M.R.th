@@ -194,104 +194,12 @@ function Diet() {
                   </div>
                   <div class="p-4">
                     <h2 class="text-base font-normal leading-6 mb-2">
-                      {recipe.time}
+                      {recipe.title}
                     </h2>
                     <p class="text-sm text-black/40">{recipe.description}</p>
                   </div>
                 </div>
               ))}
-
-              <div class="bg-gray-100 rounded-2xl overflow-hidden"></div>
-              <div class="bg-gray-100 rounded-lg overflow-hidden">
-                <div class="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&h=350&fit=crop"
-                    alt="Recipe"
-                    class="w-full h-40 object-cover"
-                  />
-                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-gray-200 text-black text-xs rounded ">
-                    30 mins
-                  </button>
-                </div>
-                <div class="p-4">
-                  <h2 class="text-lg font-semibold">
-                    Tuscan Panzanella Cherry
-                  </h2>
-                  <p class="text-sm text-gray-400">Fresh Salad</p>
-                </div>
-              </div>
-              <div class="bg-gray-100 rounded-lg overflow-hidden">
-                <div class="relative">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAufvybCKBgrB6OZjyIg60itAzH6s--A315w&s"
-                    alt="Recipe"
-                    class="w-full h-40 object-cover"
-                  />
-                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-gray-200 text-black text-xs rounded ">
-                    30 mins
-                  </button>
-                </div>
-                <div class="p-4">
-                  <h2 class="text-lg font-semibold">
-                    Tuscan Panzanella Cherry
-                  </h2>
-                  <p class="text-sm text-gray-400">Fresh Salad</p>
-                </div>
-              </div>
-              <div class="bg-gray-100 rounded-lg overflow-hidden">
-                <div class="relative">
-                  <img
-                    src="https://www.hauteandhealthyliving.com/wp-content/uploads/2021/12/Healthy-Orange-Chicken-25-500x375.jpg"
-                    alt="Recipe"
-                    class="w-full h-40 object-cover"
-                  />
-                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-gray-100 text-black text-xs rounded ">
-                    30 mins
-                  </button>
-                </div>
-                <div class="p-4">
-                  <h2 class="text-lg font-semibold">
-                    Tuscan Panzanella Cherry
-                  </h2>
-                  <p class="text-sm text-gray-400">Fresh Salad</p>
-                </div>
-              </div>
-              <div class="bg-gray-100 rounded-lg overflow-hidden">
-                <div class="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&h=350&fit=crop"
-                    alt="Recipe"
-                    class="w-full h-40 object-cover"
-                  />
-                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-gray-200 text-black text-xs rounded ">
-                    30 mins
-                  </button>
-                </div>
-                <div class="p-4">
-                  <h2 class="text-lg font-semibold">
-                    Tuscan Panzanella Cherry
-                  </h2>
-                  <p class="text-sm text-gray-400">Fresh Salad</p>
-                </div>
-              </div>
-              <div class="bg-gray-100 rounded-lg overflow-hidden">
-                <div class="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&h=350&fit=crop"
-                    alt="Recipe"
-                    class="w-full h-40 object-cover"
-                  />
-                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-gray-200 text-black text-xs rounded ">
-                    30 mins
-                  </button>
-                </div>
-                <div class="p-4">
-                  <h2 class="text-lg font-semibold">
-                    Tuscan Panzanella Cherry
-                  </h2>
-                  <p class="text-sm text-gray-400">Fresh Salad</p>
-                </div>
-              </div>
             </div>
           </main>
         </div>
