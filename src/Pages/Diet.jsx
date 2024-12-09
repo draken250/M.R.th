@@ -72,49 +72,49 @@ function Diet() {
               </a>
               <a
                 href="#"
-                class="text-sm font-semibold text-gray-400 hover:text-orange-500"
+                class="text-sm font-medium text-black/40 hover:text-orange-500"
               >
                 Breakfasts
               </a>
               <a
                 href="#"
-                class="text-sm font-semibold text-gray-400  hover:text-orange-500"
+                class="text-sm font-medium text-black/40  hover:text-orange-500"
               >
                 Lunches
               </a>
               <a
                 href="#"
-                class="text-sm font-semibold text-gray-400  hover:text-orange-500"
+                class="text-sm font-medium text-black/40  hover:text-orange-500"
               >
                 Desserts
               </a>
               <a
                 href="#"
-                class="text-sm font-semibold text-gray-400  hover:text-orange-500"
+                class="text-sm font-medium text-black/40  hover:text-orange-500"
               >
                 Dinner
               </a>
               <a
                 href="#"
-                class="text-sm font-semibold text-gray-400 hover:text-orange-500"
+                class="text-sm font-medium text-black/40 hover:text-orange-500"
               >
                 Sides
               </a>
               <a
                 href="#"
-                class="text-sm font-semibold text-gray-400 hover:text-orange-500"
+                class="text-sm font-medium text-black/40 hover:text-orange-500"
               >
                 Snacks
               </a>
               <a
                 href="#"
-                class="text-sm font-semibold text-gray-400 hover:text-orange-500"
+                class="text-sm font-medium text-black/40 hover:text-orange-500"
               >
                 Soups
               </a>
               <a
                 href="#"
-                class="text-sm font-semibold text-gray-400 hover:text-orange-500"
+                class="text-sm font-medium text-black/40 hover:text-orange-500"
               >
                 Vegan
               </a>
