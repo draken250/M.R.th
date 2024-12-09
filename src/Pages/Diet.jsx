@@ -1,6 +1,6 @@
 import React from "react";
 import Topbar from "../Components/Topbar";
-import { LuFilterX } from "react-icons/lu";
+import { RxMixerHorizontal } from "react-icons/rx";
 
 function Diet() {
   return (
@@ -51,7 +51,7 @@ function Diet() {
               </div>
               <div class="flex flex-wrap items-center gap-2">
                 <button class="flex items-center justify-center gap-2 px-5 py-2 text-sm rounded-full hover:bg-stone-200">
-                  <LuFilterX />
+                <RxMixerHorizontal />
                   <span>Filters</span>
                 </button>
                 <button class="flex items-center gap-2 px-5 py-2 text-sm bg-orange-500 text-white rounded-full hover:bg-main-color">
