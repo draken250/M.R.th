@@ -142,6 +142,7 @@ function Diet() {
                     class="w-full h-40 object-cover brightness-90"
                   />
                   <button class="absolute bottom-2 left-2 px-2 py-1 bg-white shadow text-black/70 text-xs font-medium rounded-full ">
+                    <LuCookingPot />
                     30 mins
                   </button>
                 </div>
