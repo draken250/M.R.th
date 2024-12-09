@@ -47,11 +47,11 @@ function Diet() {
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 text-gray-800">
               <div>
                 <h1 class="text-2xl font-semibold">Saved Recipes</h1>
-                <p class="text-gray-400">8 recipes</p>
+                <p class="text-gray-400 text-sm">8 recipes</p>
               </div>
               <div class="flex flex-wrap items-center gap-2">
-                <button class="flex items-center justify-center gap-2 px-5 py-2 text-sm rounded-full hover:bg-stone-200">
-                <RxMixerHorizontal />
+                <button class="flex items-center justify-center gap-2 px-4 py-2 text-sm rounded-full hover:bg-stone-200">
+                <RxMixerHorizontal className="text-lg" />
                   <span>Filters</span>
                 </button>
                 <button class="flex items-center gap-2 px-5 py-2 text-sm bg-orange-500 text-white rounded-full hover:bg-main-color">
