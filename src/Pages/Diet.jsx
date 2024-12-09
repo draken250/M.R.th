@@ -108,7 +108,7 @@ function Diet() {
                 </li>
               ))}
 
-              <li>
+              {/* <li>
                 <a href="#" class="hover:text-gray-400">
                   Cooking Courses
                 </a>
@@ -132,7 +132,7 @@ function Diet() {
                 <a href="#" class="hover:text-gray-400">
                   Grocery List
                 </a>
-              </li>
+              </li> */}
             </ul>
           </aside>
 
