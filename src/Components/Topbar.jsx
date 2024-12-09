@@ -61,7 +61,7 @@ function Topbar() {
               : "bg-white dark:bg-dark-gray-dark text-dark-gray-dark dark:text-text-dark"
           }`}
         >
-          Culinary Health{" "}
+          Diet & meals{" "}
         </Link>
       </div>
       {/* profile & notification */}
