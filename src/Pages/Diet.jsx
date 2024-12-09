@@ -99,10 +99,10 @@ function Diet() {
       <div class="min-h-screen h-full flex flex-col w-full text-grey">
         <div class="flex px-5 pb-5 bg-main-body w-full h-full flex-1">
           <aside class="bg-transparent w-56 p-4">
-            <ul class="space-y-4">
+            <ul class="space-y-2">
               {recipeCategories.map((category) => (
                 <li key={category.id}>
-                  <a href="#" class="hover:text-gray-400">
+                  <a href="#" class="hover:text-gray-400 text-sm">
                     {category.category}
                   </a>
                 </li>
