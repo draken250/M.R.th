@@ -78,7 +78,7 @@ function Diet() {
     {
       id: 9,
       imgSrc:
-        "https://www.wholesomeyum.com/wp-content/uploads/2020/01/wholesomeyum-Keto-Meatballs-Low-Carb-Meatballs-2.jpg",
+        "https://ketogasm.com/wp-content/uploads/2018/04/Easy-Keto-Swedish-Meatballs-1-of-6.jpg",
       title: "Keto Meatballs",
       description: "Juicy meatballs in a savory tomato sauce.",
       time: "30 mins",
