@@ -51,7 +51,7 @@ function Diet() {
           </aside>
 
           <main class="flex-1 p-7 bg-white rounded-3xl w-full min-h-full">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 text-gray-800">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 text-gray-800">
               <div>
                 <h1 class="text-2xl font-semibold">Saved Recipes</h1>
                 <p class="text-gray-400 text-sm">8 recipes</p>
@@ -68,7 +68,7 @@ function Diet() {
               </div>
             </div>
 
-            <div class="flex gap-4 mb-6">
+            <div class="flex gap-4 mb-8">
               <a
                 href="#"
                 className="text-sm font-semibold flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-orange-500 hover:text-orange-500"
