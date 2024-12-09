@@ -55,10 +55,7 @@ function Diet() {
                 <button class="flex items-center gap-2 px-4 py-1 border border-gray-700 rounded hover:bg-gray-700">
                   <span>Sort</span>
                 </button>
-                <button class="px-4 py-1 border border-gray-700 rounded hidden sm:block hover:bg-gray-700">
-                  ...
-                </button>
-                <button class="flex items-center gap-2 px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-main-color">
+                <button class="flex items-center gap-2 px-5 py-2 bg-orange-500 text-white rounded-full hover:bg-main-color">
                   Share
                 </button>
               </div>
