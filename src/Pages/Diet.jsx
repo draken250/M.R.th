@@ -84,6 +84,14 @@ function Diet() {
       time: "30 mins",
     },
   ];
+  const recipeCategories = [
+    { id: 1, category: "High-Protein" },
+    { id: 2, category: "Low-Calorie" },
+    { id: 3, category: "Gluten-Free" },
+    { id: 5, category: "Keto-Friendly" },
+    { id: 6, category: "Low-Sugar" },
+    { id: 8, category: "Heart-Healthy" },
+  ];
 
   return (
     <div className="flex flex-col items-start justify-start bg-main-body dark:bg-main-body-dark">
