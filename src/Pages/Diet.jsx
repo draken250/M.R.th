@@ -141,7 +141,7 @@ function Diet() {
                     alt="Recipe"
                     class="w-full h-40 object-cover"
                   />
-                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-gray-200 text-black text-xs rounded ">
+                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-white shadow-xl text-black text-xs rounded ">
                     30 mins
                   </button>
                 </div>
