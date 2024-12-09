@@ -62,7 +62,7 @@ function Diet() {
     {
       id: 7,
       imgSrc:
-        "https://assets.bonappetit.com/photos/5dbb99d27c7b8000083782a4/16:9/w_2560,c_limit/Chocolate%20Chip%20Cookies.jpg",
+        "https://www.theslowroasteditalian.com/wp-content/uploads/2023/11/Best-Gooey-Chocolate-Chip-Cookies-Soft-Chewy-Recipe-SQUARE.jpg",
       title: "Chewy Chocolate Chip Cookies",
       description: "Classic cookies with gooey chocolate chunks.",
       time: "20 mins",
