@@ -4,6 +4,7 @@ import { RxMixerHorizontal } from "react-icons/rx";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { RiShareFill } from "react-icons/ri";
 import { GrBook } from "react-icons/gr";
+import { LuCoffee } from "react-icons/lu";
 
 function Diet() {
   return (
@@ -76,6 +77,7 @@ function Diet() {
                 href="#"
                 class="text-sm font-medium text-black/40 hover:text-orange-500"
               >
+                <LuCoffee />
                 Breakfasts
               </a>
               <a
