@@ -134,14 +134,14 @@ function Diet() {
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-4 w-full">
-              <div class="bg-gray-100 rounded-3xl overflow-hidden">
+              <div class="bg-gray-100 rounded-2xl overflow-hidden">
                 <div class="relative">
                   <img
                     src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chicken-katsu-curry-d339012.jpg?quality=90&resize=430,390"
                     alt="Recipe"
                     class="w-full h-40 object-cover brightness-90"
                   />
-                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-white shadow text-black text-xs rounded-full ">
+                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-white shadow text-black/70 text-xs font-medium rounded-full ">
                     30 mins
                   </button>
                 </div>
