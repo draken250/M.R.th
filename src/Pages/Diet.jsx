@@ -189,14 +189,14 @@ function Diet() {
                     />
                     <button class="absolute bottom-2 left-2 px-2 py-1 flex items-center gap-1 bg-white shadow text-black/70 text-xs font-medium rounded-full ">
                       <PiCookingPot />
-                      30 mins
+                      {recipe.time}
                     </button>
                   </div>
                   <div class="p-4">
                     <h2 class="text-base font-normal leading-6 mb-2">
-                      Salad Caprese Pasta Spaghetti
+                      {recipe.time}
                     </h2>
-                    <p class="text-sm text-black/40">Fresh Salad</p>
+                    <p class="text-sm text-black/40">{recipe.description}</p>
                   </div>
                 </div>
               ))}
