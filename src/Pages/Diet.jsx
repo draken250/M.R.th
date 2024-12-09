@@ -103,12 +103,12 @@ function Diet() {
                 <PiWine />
                 Dinner
               </a>
-              <a
+              {/* <a
                 href="#"
                 class="text-sm font-medium text-black/40 hover:text-orange-500"
               >
                 Sides
-              </a>
+              </a> */}
               <a
                 href="#"
                 class="text-sm font-medium text-black/40 hover:text-orange-500"
