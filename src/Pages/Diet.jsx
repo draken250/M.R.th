@@ -49,13 +49,13 @@ function Diet() {
                 <p class="text-gray-400">8 recipes</p>
               </div>
               <div class="flex flex-wrap items-center gap-2 sm:gap-4">
-                <button class="flex items-center gap-2 px-4 py-0.5 border border-gray-700 rounded hover:bg-gray-700">
+                <button class="flex items-center gap-2 px-5 py-2.5 border border-gray-700 rounded-full hover:bg-gray-700">
                   <span>Filters</span>
                 </button>
-                <button class="flex items-center gap-2 px-4 py-1 border border-gray-700 rounded hover:bg-gray-700">
+                <button class="flex items-center gap-2 px-5 py-2.5 border border-gray-700 rounded-full hover:bg-gray-700">
                   <span>Sort</span>
                 </button>
-                <button class="flex items-center gap-2 px-5 py-2 bg-orange-500 text-white rounded-full hover:bg-main-color">
+                <button class="flex items-center gap-2 px-5 py-2.5 bg-orange-500 text-white rounded-full hover:bg-main-color">
                   Share
                 </button>
               </div>
