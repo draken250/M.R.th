@@ -4,9 +4,10 @@ import { RxMixerHorizontal } from "react-icons/rx";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { RiShareFill } from "react-icons/ri";
 import { GrBook } from "react-icons/gr";
-import { LuCoffee, LuCookie, LuDessert } from "react-icons/lu";
+import { LuCoffee, LuCookie, LuDessert, LuVegan } from "react-icons/lu";
 import { BiBowlRice } from "react-icons/bi";
 import { PiWine } from "react-icons/pi";
+import { TbSoup } from "react-icons/tb";
 
 function Diet() {
   return (
@@ -120,12 +121,14 @@ function Diet() {
                 href="#"
                 class="text-sm font-medium text-black/40 hover:text-orange-500"
               >
+                <TbSoup />
                 Soups
               </a>
               <a
                 href="#"
                 class="text-sm font-medium text-black/40 hover:text-orange-500"
               >
+                <LuVegan />
                 Vegan
               </a>
             </div>
