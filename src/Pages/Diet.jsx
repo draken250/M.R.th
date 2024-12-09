@@ -71,37 +71,37 @@ function Diet() {
             <div class="flex gap-4 mb-6">
               <a
                 href="#"
-                class="text-sm font-semibold flex flex-col text-orange-500 hover:text-orange-500"
+                className="text-sm font-semibold flex flex-col text-orange-500 hover:text-orange-500"
               >
-                <GrBook />
+                <GrBook className="text-2xl" />
                 All Recipes
               </a>
               <a
                 href="#"
-                class="text-sm font-medium text-black/40 hover:text-orange-500"
+                className="text-sm font-medium text-black/40 hover:text-orange-500"
               >
-                <LuCoffee />
+                <LuCoffee className="text-2xl" />
                 Breakfasts
               </a>
               <a
                 href="#"
-                class="text-sm font-medium text-black/40  hover:text-orange-500"
+                className="text-sm font-medium text-black/40  hover:text-orange-500"
               >
-                <BiBowlRice />
+                <BiBowlRice className="text-2xl" />
                 Lunches
               </a>
               <a
                 href="#"
-                class="text-sm font-medium text-black/40  hover:text-orange-500"
+                className="text-sm font-medium text-black/40  hover:text-orange-500"
               >
-                <LuDessert />
+                <LuDessert className="text-2xl" />
                 Desserts
               </a>
               <a
                 href="#"
-                class="text-sm font-medium text-black/40  hover:text-orange-500"
+                className="text-sm font-medium text-black/40  hover:text-orange-500"
               >
-                <PiWine />
+                <PiWine className="text-2xl" />
                 Dinner
               </a>
               {/* <a
@@ -112,23 +112,23 @@ function Diet() {
               </a> */}
               <a
                 href="#"
-                class="text-sm font-medium text-black/40 hover:text-orange-500"
+                className="text-sm font-medium text-black/40 hover:text-orange-500"
               >
-                <LuCookie />
+                <LuCookie className="text-2xl" />
                 Snacks
               </a>
               <a
                 href="#"
-                class="text-sm font-medium text-black/40 hover:text-orange-500"
+                className="text-sm font-medium text-black/40 hover:text-orange-500"
               >
-                <TbSoup />
+                <TbSoup className="text-2xl" />
                 Soups
               </a>
               <a
                 href="#"
-                class="text-sm font-medium text-black/40 hover:text-orange-500"
+                className="text-sm font-medium text-black/40 hover:text-orange-500"
               >
-                <LuVegan />
+                <LuVegan className="text-2xl" />
                 Vegan
               </a>
             </div>
