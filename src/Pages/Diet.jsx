@@ -3,6 +3,7 @@ import Topbar from "../Components/Topbar";
 import { RxMixerHorizontal } from "react-icons/rx";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { RiShareFill } from "react-icons/ri";
+import { GrBook } from "react-icons/gr";
 
 function Diet() {
   return (
@@ -68,6 +69,7 @@ function Diet() {
                 href="#"
                 class="text-sm font-semibold flex flex-col text-orange-500 hover:text-orange-500"
               >
+                <GrBook />
                 All Recipes
               </a>
               <a
