@@ -100,11 +100,14 @@ function Diet() {
         <div class="flex px-5 pb-5 bg-main-body w-full h-full flex-1">
           <aside class="bg-transparent w-56 p-4">
             <ul class="space-y-4">
-              <li>
-                <a href="#" class="hover:text-gray-400">
-                  Dashboard
-                </a>
-              </li>
+              {recipeCategories.map((category) => (
+                <li key={category.id}>
+                  <a href="#" class="hover:text-gray-400">
+                    {category.category}
+                  </a>
+                </li>
+              ))}
+
               <li>
                 <a href="#" class="hover:text-gray-400">
                   Cooking Courses
