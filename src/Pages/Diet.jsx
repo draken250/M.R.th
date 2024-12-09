@@ -1,6 +1,7 @@
 import React from "react";
 import Topbar from "../Components/Topbar";
 import { RxMixerHorizontal } from "react-icons/rx";
+import { IoShareSocialOutline } from "react-icons/io5";
 
 function Diet() {
   return (
@@ -44,7 +45,6 @@ function Diet() {
           </aside>
 
           <main class="flex-1 p-7 bg-white rounded-3xl w-full min-h-full">
-            
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 text-gray-800">
               <div>
                 <h1 class="text-2xl font-semibold">Saved Recipes</h1>
@@ -52,10 +52,11 @@ function Diet() {
               </div>
               <div class="flex flex-wrap items-center gap-2">
                 <button class="flex items-center justify-center gap-2 px-4 py-2 text-sm rounded-full hover:bg-stone-200">
-                <RxMixerHorizontal className="text-lg" />
+                  <RxMixerHorizontal className="text-lg" />
                   <span>Filters</span>
                 </button>
-                <button class="flex items-center gap-2 px-5 py-2 text-sm bg-orange-500 text-white rounded-full hover:bg-main-color">
+                <button class="flex items-center gap-2 px-4 py-2 text-sm bg-orange-500 text-white rounded-full hover:bg-main-color">
+                  <IoShareSocialOutline className="text-lg" />
                   Share
                 </button>
               </div>
