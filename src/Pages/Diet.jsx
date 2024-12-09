@@ -126,7 +126,7 @@ function Diet() {
                 </a>
               </li>
               {recipeCategories.map((category) => (
-                <li key={category.id} className="pl-5">
+                <li key={category.id} className="pl-3">
                   <a href="#" class="hover:text-main-color text-sm">
                     {category.category}
                   </a>
