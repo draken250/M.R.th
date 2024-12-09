@@ -81,7 +81,7 @@ function Diet() {
                 </a>
               </li>
               <li>
-                <a href="#" class="text-orange-500">
+                <a href="#" class="text-main-color">
                   Saved Recipes
                 </a>
               </li>
@@ -114,62 +114,62 @@ function Diet() {
             <div class="flex gap-4 mb-8">
               <a
                 href="#"
-                className="text-sm font-semibold flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-orange-500 hover:text-orange-500"
+                className="text-sm font-semibold flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-main-color hover:text-main-color"
               >
                 <GrBook className="text-2xl" />
                 All Recipes
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
               >
                 <LuCoffee className="text-2xl" />
                 Breakfasts
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-main-color"
               >
                 <BiBowlRice className="text-2xl" />
                 Lunches
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-main-color"
               >
                 <LuDessert className="text-2xl" />
                 Desserts
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-main-color"
               >
                 <PiWine className="text-2xl" />
                 Dinner
               </a>
               {/* <a
                 href="#"
-                class="text-sm font-medium text-black/40 hover:text-orange-500"
+                class="text-sm font-medium text-black/40 hover:text-main-color"
               >
                 Sides
               </a> */}
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
               >
                 <LuCookie className="text-2xl" />
                 Snacks
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
               >
                 <TbSoup className="text-2xl" />
                 Soups
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
               >
                 <LuVegan className="text-2xl" />
                 Vegan
