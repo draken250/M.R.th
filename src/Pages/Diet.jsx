@@ -54,7 +54,7 @@ function Diet() {
     {
       id: 6,
       imgSrc:
-        "https://www.foodiecrush.com/wp-content/uploads/2022/08/Summer-Ratatouille-foodiecrush.com-026.jpg",
+        "https://tasteofthesouthmagazine.com/wp-content/uploads/2014/08/Summer-Ratatouille.gif",
       title: "Summer Ratatouille",
       description: "A colorful medley of roasted summer vegetables.",
       time: "45 mins",
