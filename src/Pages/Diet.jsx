@@ -10,6 +10,49 @@ import { PiCookingPot, PiWine } from "react-icons/pi";
 import { TbSoup } from "react-icons/tb";
 
 function Diet() {
+  const recipes = [
+    {
+      id: 1,
+      imgSrc:
+        "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&h=350&fit=crop",
+      title: "Mediterranean Veggie Delight",
+      description: "A vibrant mix of fresh vegetables and herbs.",
+      time: "25 mins",
+    },
+    {
+      id: 2,
+      imgSrc:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAufvybCKBgrB6OZjyIg60itAzH6s--A315w&s",
+      title: "Classic Caprese Salad",
+      description: "Tomatoes, mozzarella, and basil at their best.",
+      time: "15 mins",
+    },
+    {
+      id: 3,
+      imgSrc:
+        "https://www.hauteandhealthyliving.com/wp-content/uploads/2021/12/Healthy-Orange-Chicken-25-500x375.jpg",
+      title: "Zesty Orange Chicken",
+      description: "A tangy and sweet chicken dish.",
+      time: "40 mins",
+    },
+    {
+      id: 4,
+      imgSrc:
+        "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&h=350&fit=crop",
+      title: "Hearty Lentil Soup",
+      description: "A warm and filling bowl of comfort.",
+      time: "50 mins",
+    },
+    {
+      id: 5,
+      imgSrc:
+        "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&h=350&fit=crop",
+      title: "Spicy Thai Noodles",
+      description: "A bold and flavorful noodle dish.",
+      time: "35 mins",
+    },
+  ];
+
   return (
     <div className="flex flex-col items-start justify-start bg-main-body dark:bg-main-body-dark">
       <Topbar />
@@ -134,6 +177,30 @@ function Diet() {
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-4 w-full">
+              {recipes.slice(0, 1).map((recipe) => (
+                <div
+                  className="bg-gray-100 rounded-lg overflow-hidden"
+                  key={recipe.id}
+                >
+                  <div className="relative">
+                    <img
+                      src={recipe.imgSrc}
+                      alt={recipe.title}
+                      className="w-full h-40 object-cover"
+                    />
+                    <button className="absolute bottom-2 left-2 px-2 py-1 bg-gray-200 text-black text-xs rounded">
+                      {recipe.time}
+                    </button>
+                  </div>
+                  <div className="p-4">
+                    <h2 className="text-lg font-semibold">{recipe.title}</h2>
+                    <p className="text-sm text-gray-400">
+                      {recipe.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+
               <div class="bg-gray-100 rounded-2xl overflow-hidden">
                 <div class="relative">
                   <img
