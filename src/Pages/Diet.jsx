@@ -179,7 +179,7 @@ function Diet() {
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-4 w-full">
               {recipes.map((recipe) => (
                 <div
-                  className="bg-gray-100 rounded-2xl overflow-hidden"
+                  className="bg-main-body rounded-2xl overflow-hidden"
                   key={recipe.id}
                 >
                   <div class="relative">
