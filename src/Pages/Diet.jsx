@@ -51,6 +51,38 @@ function Diet() {
       description: "A bold and flavorful noodle dish.",
       time: "35 mins",
     },
+    {
+      id: 6,
+      imgSrc:
+        "https://www.foodiecrush.com/wp-content/uploads/2022/08/Summer-Ratatouille-foodiecrush.com-026.jpg",
+      title: "Summer Ratatouille",
+      description: "A colorful medley of roasted summer vegetables.",
+      time: "45 mins",
+    },
+    {
+      id: 7,
+      imgSrc:
+        "https://assets.bonappetit.com/photos/5dbb99d27c7b8000083782a4/16:9/w_2560,c_limit/Chocolate%20Chip%20Cookies.jpg",
+      title: "Chewy Chocolate Chip Cookies",
+      description: "Classic cookies with gooey chocolate chunks.",
+      time: "20 mins",
+    },
+    {
+      id: 8,
+      imgSrc:
+        "https://www.loveandlemons.com/wp-content/uploads/2019/08/spaghetti-aglio-e-olio.jpg",
+      title: "Spaghetti Aglio e Olio",
+      description: "Simple and flavorful pasta with garlic and olive oil.",
+      time: "15 mins",
+    },
+    {
+      id: 9,
+      imgSrc:
+        "https://www.wholesomeyum.com/wp-content/uploads/2020/01/wholesomeyum-Keto-Meatballs-Low-Carb-Meatballs-2.jpg",
+      title: "Keto Meatballs",
+      description: "Juicy meatballs in a savory tomato sauce.",
+      time: "30 mins",
+    },
   ];
 
   return (
