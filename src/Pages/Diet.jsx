@@ -4,9 +4,9 @@ import { RxMixerHorizontal } from "react-icons/rx";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { RiShareFill } from "react-icons/ri";
 import { GrBook } from "react-icons/gr";
-import { LuCoffee, LuCookie, LuDessert, LuVegan, LuCookingPot } from "react-icons/lu";
+import { LuCoffee, LuCookie, LuDessert, LuVegan } from "react-icons/lu";
 import { BiBowlRice } from "react-icons/bi";
-import { PiWine } from "react-icons/pi";
+import { PiCookingPot, PiWine } from "react-icons/pi";
 import { TbSoup } from "react-icons/tb";
 
 function Diet() {
@@ -141,8 +141,8 @@ function Diet() {
                     alt="Recipe"
                     class="w-full h-40 object-cover brightness-90"
                   />
-                  <button class="absolute bottom-2 left-2 px-2 py-1 bg-white shadow text-black/70 text-xs font-medium rounded-full ">
-                    <LuCookingPot />
+                  <button class="absolute bottom-2 left-2 px-2 py-1 flex items-center gap-1 bg-white shadow text-black/70 text-xs font-medium rounded-full ">
+                    <PiCookingPot />
                     30 mins
                   </button>
                 </div>
