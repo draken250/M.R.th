@@ -104,7 +104,7 @@ function Diet() {
                   <RxMixerHorizontal className="text-lg" />
                   <span>Filters</span>
                 </button>
-                <button class="flex items-center gap-2 px-4 py-2 text-sm bg-orange-500 text-white rounded-full hover:bg-main-color">
+                <button class="flex items-center gap-2 px-4 py-2 text-sm bg-main-color text-white rounded-full hover:bg-main-color">
                   <RiShareFill className="text-lg" />
                   Share
                 </button>
