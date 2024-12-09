@@ -6,8 +6,8 @@ function Diet() {
   return (
     <div className="flex flex-col items-start justify-start bg-main-body dark:bg-main-body-dark">
       <Topbar />
-      <div class="min-h-screen w-full text-grey">
-        <div class="flex px-5 pb-5 bg-main-body w-full">
+      <div class="min-h-screen w-full text-grey h-full">
+        <div class="flex px-5 pb-5 bg-main-body w-full h-full">
           <aside class="bg-transparent w-56 p-4">
             <ul class="space-y-4">
               <li>
@@ -43,7 +43,7 @@ function Diet() {
             </ul>
           </aside>
 
-          <main class="flex-1 p-7 bg-white rounded-3xl w-full">
+          <main class="flex-1 p-7 bg-white rounded-3xl w-full min-h-full">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 text-gray-800">
               <div>
                 <h1 class="text-2xl font-semibold">Saved Recipes</h1>
