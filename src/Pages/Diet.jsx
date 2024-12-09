@@ -196,7 +196,7 @@ function Diet() {
                     <h2 class="text-lg font-normal leading-6 mb-2">
                       {recipe.title}
                     </h2>
-                    <p class="text-sm text-black/40">{recipe.description}</p>
+                    <p class="text-sm text-black/80">{recipe.description}</p>
                   </div>
                 </div>
               ))}
