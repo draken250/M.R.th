@@ -6,8 +6,8 @@ function Diet() {
   return (
     <div className="flex flex-col items-start justify-start bg-main-body dark:bg-main-body-dark">
       <Topbar />
-      <div class="min-h-screen w-full text-grey">
-        <div class="flex px-5 pb-5 bg-orange-300 w-full min-h-full">
+      <div class="min-h-svh h-full flex flex-col w-full text-grey">
+        <div class="flex px-5 pb-5 bg-orange-300 w-full h-full flex-1">
           <aside class="bg-transparent w-56 p-4">
             <ul class="space-y-4">
               <li>
