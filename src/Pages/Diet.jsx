@@ -71,37 +71,37 @@ function Diet() {
             <div class="flex gap-4 mb-6">
               <a
                 href="#"
-                className="text-sm font-semibold flex flex-col items-center justify-center px-1 gap-2 text-orange-500 hover:text-orange-500"
+                className="text-sm font-semibold flex flex-col items-center justify-center px-0 gap-2 text-orange-500 hover:text-orange-500"
               >
-                <GrBook className="text-3xl opacity-60" />
+                <GrBook className="text-2xl" />
                 All Recipes
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 gap-2 text-black/90 hover:text-orange-500"
               >
-                <LuCoffee className="text-3xl opacity-60" />
+                <LuCoffee className="text-2xl" />
                 Breakfasts
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90  hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 gap-2 text-black/90  hover:text-orange-500"
               >
-                <BiBowlRice className="text-3xl opacity-60" />
+                <BiBowlRice className="text-2xl" />
                 Lunches
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90  hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 gap-2 text-black/90  hover:text-orange-500"
               >
-                <LuDessert className="text-3xl opacity-60" />
+                <LuDessert className="text-2xl" />
                 Desserts
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90  hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 gap-2 text-black/90  hover:text-orange-500"
               >
-                <PiWine className="text-3xl opacity-60" />
+                <PiWine className="text-2xl" />
                 Dinner
               </a>
               {/* <a
@@ -112,23 +112,23 @@ function Diet() {
               </a> */}
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 gap-2 text-black/90 hover:text-orange-500"
               >
-                <LuCookie className="text-3xl opacity-60" />
+                <LuCookie className="text-2xl" />
                 Snacks
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 gap-2 text-black/90 hover:text-orange-500"
               >
-                <TbSoup className="text-3xl opacity-60" />
+                <TbSoup className="text-2xl" />
                 Soups
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-0 gap-2 text-black/90 hover:text-orange-500"
               >
-                <LuVegan className="text-3xl opacity-60" />
+                <LuVegan className="text-2xl" />
                 Vegan
               </a>
             </div>
