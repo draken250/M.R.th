@@ -101,32 +101,32 @@ function Diet() {
           <aside class="bg-transparent w-56 p-4">
             <ul class="space-y-2">
               <li>
-                <a href="#" class="hover:text-gray-400">
+                <a href="#" class="text-sm">
                   Cooking Courses
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:text-gray-400">
+                <a href="#" class="text-sm">
                   Recently Viewed
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:text-gray-400">
+                <a href="#" class="text-sm">
                   Weekly Prep
                 </a>
               </li>
               <li>
-                <a href="#" class="text-main-color">
+                <a href="#" class="text-main-color text-sm">
                   Saved Recipes
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:text-gray-400">
+                <a href="#" class="text-sm">
                   Grocery List
                 </a>
               </li>
               {recipeCategories.map((category) => (
-                <li key={category.id} className="pl-6">
+                <li key={category.id} className="pl-4">
                   <a href="#" class="hover:text-gray-400 text-sm">
                     {category.category}
                   </a>
