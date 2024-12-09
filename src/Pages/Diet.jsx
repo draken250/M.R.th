@@ -2,6 +2,7 @@ import React from "react";
 import Topbar from "../Components/Topbar";
 import { RxMixerHorizontal } from "react-icons/rx";
 import { IoShareSocialOutline } from "react-icons/io5";
+import { RiShareFill } from "react-icons/ri";
 
 function Diet() {
   return (
@@ -56,7 +57,7 @@ function Diet() {
                   <span>Filters</span>
                 </button>
                 <button class="flex items-center gap-2 px-4 py-2 text-sm bg-orange-500 text-white rounded-full hover:bg-main-color">
-                  <IoShareSocialOutline className="text-lg" />
+                  <RiShareFill className="text-lg" />
                   Share
                 </button>
               </div>
