@@ -147,7 +147,7 @@ function Diet() {
                   </button>
                 </div>
                 <div class="p-4">
-                  <h2 class="text-lg font-medium leading-56">
+                  <h2 class="text-base font-normal leading-6 mb-2">
                     Salad Caprese Pasta Spaghetti
                   </h2>
                   <p class="text-sm text-black/40">Fresh Salad</p>
