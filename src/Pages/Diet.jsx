@@ -71,37 +71,37 @@ function Diet() {
             <div class="flex gap-4 mb-6">
               <a
                 href="#"
-                className="text-sm font-semibold flex flex-col items-center justify-center px-1 text-orange-500 hover:text-orange-500"
+                className="text-sm font-semibold flex flex-col items-center justify-center px-1 gap-2 text-orange-500 hover:text-orange-500"
               >
-                <GrBook className="text-2xl" />
+                <GrBook className="text-3xl opacity-60" />
                 All Recipes
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90 hover:text-orange-500"
               >
-                <LuCoffee className="text-2xl" />
+                <LuCoffee className="text-3xl opacity-60" />
                 Breakfasts
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 text-black/90  hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90  hover:text-orange-500"
               >
-                <BiBowlRice className="text-2xl" />
+                <BiBowlRice className="text-3xl opacity-60" />
                 Lunches
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 text-black/90  hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90  hover:text-orange-500"
               >
-                <LuDessert className="text-2xl" />
+                <LuDessert className="text-3xl opacity-60" />
                 Desserts
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 text-black/90  hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90  hover:text-orange-500"
               >
-                <PiWine className="text-2xl" />
+                <PiWine className="text-3xl opacity-60" />
                 Dinner
               </a>
               {/* <a
@@ -112,23 +112,23 @@ function Diet() {
               </a> */}
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90 hover:text-orange-500"
               >
-                <LuCookie className="text-2xl" />
+                <LuCookie className="text-3xl opacity-60" />
                 Snacks
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90 hover:text-orange-500"
               >
-                <TbSoup className="text-2xl" />
+                <TbSoup className="text-3xl opacity-60" />
                 Soups
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-1 text-black/90 hover:text-orange-500"
+                className="text-sm font-medium flex flex-col items-center justify-center px-1 gap-2 text-black/90 hover:text-orange-500"
               >
-                <LuVegan className="text-2xl" />
+                <LuVegan className="text-3xl opacity-60" />
                 Vegan
               </a>
             </div>
