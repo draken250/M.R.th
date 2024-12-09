@@ -4,7 +4,7 @@ import { RxMixerHorizontal } from "react-icons/rx";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { RiShareFill } from "react-icons/ri";
 import { GrBook } from "react-icons/gr";
-import { LuCoffee, LuCookie, LuDessert, LuVegan } from "react-icons/lu";
+import { LuCoffee, LuCookie, LuDessert, LuVegan, LuX } from "react-icons/lu";
 import { BiBowlRice } from "react-icons/bi";
 import { PiCookingPot, PiWine } from "react-icons/pi";
 import { TbSoup } from "react-icons/tb";
@@ -85,12 +85,12 @@ function Diet() {
     },
   ];
   const recipeCategories = [
-    { id: 1, category: "High-Protein" },
-    { id: 2, category: "Low-Calorie" },
-    { id: 3, category: "Gluten-Free" },
-    { id: 5, category: "Keto-Friendly" },
-    { id: 6, category: "Low-Sugar" },
-    { id: 8, category: "Heart-Healthy" },
+    { id: 1, category: "High-Protein", icon: <LuX /> },
+    { id: 2, category: "Low-Calorie", icon: <LuX /> },
+    { id: 3, category: "Gluten-Free", icon: <LuX /> },
+    { id: 5, category: "Keto-Friendly", icon: <LuX /> },
+    { id: 6, category: "Low-Sugar", icon: <LuX /> },
+    { id: 8, category: "Heart-Healthy", icon: <LuX /> },
   ];
 
   return (
