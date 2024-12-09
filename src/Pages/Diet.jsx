@@ -66,7 +66,7 @@ function Diet() {
             <div class="flex gap-4 mb-6">
               <a
                 href="#"
-                class="text-sm font-semibold text-orange-500 hover:text-orange-500"
+                class="text-sm font-semibold flex flex-col text-orange-500 hover:text-orange-500"
               >
                 All Recipes
               </a>
