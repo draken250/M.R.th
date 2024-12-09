@@ -116,7 +116,7 @@ function Diet() {
                 </a>
               </li>
               <li>
-                <a href="#" class="text-main-color text-sm">
+                <a href="#" class="hover:text-main-color text-sm">
                   Saved Recipes
                 </a>
               </li>
@@ -127,7 +127,7 @@ function Diet() {
               </li>
               {recipeCategories.map((category) => (
                 <li key={category.id} className="pl-4">
-                  <a href="#" class="hover:text-gray-400 text-sm">
+                  <a href="#" class="hover:text-main-color text-sm">
                     {category.category}
                   </a>
                 </li>
