@@ -70,7 +70,7 @@ function Diet() {
     {
       id: 8,
       imgSrc:
-        "https://www.loveandlemons.com/wp-content/uploads/2019/08/spaghetti-aglio-e-olio.jpg",
+        "https://poppopcooks.com/wp-content/uploads/2017/03/Spaghetti-Aglio-e-Olio-with-Chicken-5.jpg",
       title: "Spaghetti Aglio e Olio",
       description: "Simple and flavorful pasta with garlic and olive oil.",
       time: "15 mins",
