@@ -42,7 +42,7 @@ function Diet() {
             </ul>
           </aside>
 
-          <main class="flex-1 p-7 bg-white rounded-xl">
+          <main class="flex-1 p-7 bg-white rounded-3xl">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 text-gray-800">
               <div>
                 <h1 class="text-2xl font-semibold">Saved Recipes</h1>
