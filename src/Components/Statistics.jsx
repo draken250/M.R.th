@@ -12,7 +12,7 @@ import {
 
 function Statistics() {
   const customValues = [
-    { in: 1240.20, out: 1200 }, // For today
+    { in: 100, out: 1200 }, // For today
     { in: 2430, out: 1024.42 }, // For yesterday
     { in: 2420, out: 1042. }, // For 3days ago
     { in: 1033, out: 2822.30 }, // For 4days ago
