@@ -77,7 +77,7 @@ function Statistics() {
             On {formattedDate}
           </p>
           <p className="text-sm flex items-center justify-start gap-1 pb-1">
-            <div className="h-[20px] w-[4px] rounded-md bg-[#8ecae6]"></div>
+            <div className="h-[20px] w-[4px] rounded-md bg-[#e6c08e]"></div>
             <div>
               Resting BPM: <span className="font-semibold">{payload[0].value}</span>
             </div>
@@ -135,7 +135,7 @@ function Statistics() {
           <Bar
             dataKey="rest"
             stackId="a"
-            fill="#8ecae6"
+            fill="#e6c08e"
             shape={<RoundedBar />}
           />
         </BarChart>
