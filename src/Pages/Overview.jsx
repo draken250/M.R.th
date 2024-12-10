@@ -2,6 +2,7 @@ import React from "react";
 import Leftbar from "../Components/Leftbar";
 import Topbar from "../Components/Topbar";
 import Rightbar from "../Components/Rightbar";
+import Statistics from "../Components/Statistics";
 
 function Overview() {
   return (
@@ -16,7 +17,7 @@ function Overview() {
             </div>
             <div class="stats flex  ">
               <div class="heartrate w-2/3 p-4 bg-white text-black m-2 rounded-xl ">
-                stats
+                <Statistics />
               </div>
               <div class="smallerstats w-1/3  ">
                 <div class="calories bg-teal-400 p-4 m-2 rounded-xl">
