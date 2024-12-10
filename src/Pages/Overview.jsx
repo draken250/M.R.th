@@ -20,7 +20,7 @@ function Overview() {
                 effortlessly records and analyze your life
               </p>
             </div>
-            <div class="stats flex ">
+            <div class="stats flex gap-4">
               <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black rounded-3xl ">
                 <div className="w-full flex flex-col mb-5">
                   <div className="flex justify-between items-center">
@@ -44,7 +44,7 @@ function Overview() {
                 <Statistics />
               </div>
               <div class="smallerstats w-1/3 min-h-full flex flex-col gap-4">
-                <div class="calories bg-teal-400 p-4 rounded-3xl flex-1">
+                <div class="calories bg-[##dfcdff] p-4 rounded-3xl flex-1">
                   245
                   <br />
                   calories
