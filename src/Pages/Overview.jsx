@@ -44,7 +44,7 @@ function Overview() {
                 <Statistics />
               </div>
               <div class="smallerstats w-1/3 min-h-full flex flex-col gap-4">
-                <div class="calories bg-[##dfcdff] p-4 rounded-3xl flex-1">
+                <div class="calories bg-[#dfcdff] p-4 rounded-3xl flex-1">
                   245
                   <br />
                   calories
