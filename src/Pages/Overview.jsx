@@ -21,7 +21,7 @@ function Overview() {
               </p>
             </div>
             <div class="stats flex  ">
-              <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black m-2 rounded-xl mb-4 ">
+              <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black m-2 rounded-3xl mb-4 ">
                 <div className="w-full flex flex-col mb-5">
                   <div className="flex justify-between items-center">
                     <h1 className="text-base">Heart rate</h1>
@@ -43,8 +43,8 @@ function Overview() {
                 </div>
                 <Statistics />
               </div>
-              <div class="smallerstats w-1/3  ">
-                <div class="calories bg-teal-400 p-4 m-2 rounded-xl">
+              <div class="smallerstats w-1/3 h-full bg-red-400 ">
+                <div class="calories bg-teal-400 p-4 m-2 rounded-3xl">
                   245
                   <br />
                   calories
