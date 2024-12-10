@@ -62,7 +62,7 @@ function Overview() {
               </div>
             </div>
 
-            <div class="healthbar ">
+            {/* <div class="healthbar ">
               <div class="justify-between flex p-4">
                 <p class="text-current">
                   Average heart rate: <span class="font-bold">88bpm</span>
@@ -72,7 +72,7 @@ function Overview() {
                 </p>
               </div>
               <div class="bg-gradient-to-r from-green-600 to-orange-600 p-6 ms-2 me-2 rounded-xl"></div>
-            </div>
+            </div> */}
 
             <div class="recent p-4 ">
               <div class=" flex justify-between">
