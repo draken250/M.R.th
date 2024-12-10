@@ -19,7 +19,11 @@ function Overview() {
             </div>
             <div class="stats flex  ">
               <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black m-2 rounded-xl ">
-                <div className="w-full flex"></div>
+                <div className="w-full flex flex-col">
+                  <div className="flex justify-between">
+                    <h1 className="text-sm font-bold">Heart Reate</h1>
+                  </div>
+                </div>
                 <Statistics />
               </div>
               <div class="smallerstats w-1/3  ">
