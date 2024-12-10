@@ -7,6 +7,7 @@ import {
   CartesianGrid,
   ResponsiveContainer,
   Rectangle,
+  YAxis,
 } from "recharts";
 
 function Statistics() {
@@ -108,6 +109,7 @@ function Statistics() {
           barSize={50}
         >
           <CartesianGrid strokeDasharray="5 10" />
+          <YAxis />
           <XAxis
             dataKey="date"
             tick={{ fontSize: 12 }}
