@@ -46,7 +46,7 @@ function Statistics() {
 
   const RoundedBar = (props) => {
     const { x, y, width, height, fill } = props;
-    const radius = 7;
+    const radius = 16;
     return (
       <Rectangle
         x={x}
