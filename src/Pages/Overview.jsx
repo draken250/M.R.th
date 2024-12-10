@@ -35,6 +35,9 @@ function Overview() {
                       </button>
                     </div>
                   </div>
+                  <h1 className="text-2xl">
+                    88 <span>BPM</span>
+                  </h1>
                 </div>
                 <Statistics />
               </div>
