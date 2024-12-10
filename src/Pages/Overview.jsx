@@ -39,7 +39,7 @@ function Overview() {
                   <h1 className="text-3xl flex items-center gap-2 mb-3">
                     88 <span className="opacity-40">BPM</span> <GoHeartFill className="text-main-color" />
                   </h1>
-                  <h1>12 - 19 Jul 2023</h1>
+                  <h1 className="text-sm opacity-45">12 - 19 Jul 2023</h1>
                 </div>
                 <Statistics />
               </div>
