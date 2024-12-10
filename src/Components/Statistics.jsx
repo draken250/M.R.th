@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   BarChart,
   Bar,
@@ -11,39 +11,36 @@ import {
 } from "recharts";
 
 function Statistics() {
-  const customValues = [
-    { in: 100, out: 1200 }, // For today
-    { in: 2430, out: 1024.42 }, // For yesterday
-    { in: 2420, out: 1042. }, // For 3days ago
-    { in: 1033, out: 2822.30 }, // For 4days ago
-    { in: 605.22, out: 2902.34 }, // For 5days ago
-    { in: 3345, out: 1032 }, // For 6days ago
-    { in: 2502.43, out: 1024.23 }, // For 7days ago
+  const bpmValues = [
+    { rest: 60, active: 120 }, // Today
+    { rest: 62, active: 115 }, // Yesterday
+    { rest: 63, active: 118 }, // 3 days ago
+    { rest: 61, active: 122 }, // 4 days ago
+    { rest: 65, active: 119 }, // 5 days ago
+    { rest: 64, active: 121 }, // 6 days ago
+    { rest: 66, active: 117 }, // 7 days ago
   ];
-  const getLastTenDays = () => {
+
+  const getLastSevenDays = () => {
     const today = new Date();
     const days = [];
 
-  
-
-    for (let i = 0; i < customValues.length; i++) {
+    for (let i = 0; i < bpmValues.length; i++) {
       const date = new Date(today);
       date.setDate(today.getDate() - i);
 
-      // Get custom values for 'in' and 'out'
-      const { in: incomeValue, out: expenseValue } = customValues[i];
-
+      const { rest, active } = bpmValues[i];
       days.push({
-        date: date.toLocaleDateString("en-US"), // Format the date
-        in: incomeValue, // Manual income value
-        out: expenseValue, // Manual expense value
+        date: date.toLocaleDateString("en-US"),
+        rest,
+        active,
       });
     }
 
-    return days;
+    return days.reverse();
   };
 
-  const income = getLastTenDays();
+  const bpmData = getLastSevenDays();
 
   const RoundedBar = (props) => {
     const { x, y, width, height, fill } = props;
@@ -80,17 +77,15 @@ function Statistics() {
             On {formattedDate}
           </p>
           <p className="text-sm flex items-center justify-start gap-1 pb-1">
-            <div className="h-[20px] w-[4px] rounded-md bg-[#e8cf9b]"></div>
+            <div className="h-[20px] w-[4px] rounded-md bg-[#8ecae6]"></div>
             <div>
-              Sent:{" "}
-              <span className="font-semibold">{`$${payload[1].value}`}</span>
+              Resting BPM: <span className="font-semibold">{payload[0].value}</span>
             </div>
           </p>
           <p className="text-sm flex items-center justify-start gap-1 pb-1">
-            <div className="h-[20px] w-[4px] rounded-md bg-[#ef7158]"></div>
+            <div className="h-[20px] w-[4px] rounded-md bg-[#219ebc]"></div>
             <div>
-              Recieved:{" "}
-              <span className="font-semibold">{`$${payload[0].value}`}</span>
+              Active BPM: <span className="font-semibold">{payload[1].value}</span>
             </div>
           </p>
         </div>
@@ -103,7 +98,7 @@ function Statistics() {
     <div className="w-full h-fit">
       <ResponsiveContainer width="100%" height={300}>
         <BarChart
-          data={income}
+          data={bpmData}
           margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
           barCategoryGap="0%"
           barSize={50}
@@ -118,7 +113,6 @@ function Statistics() {
               const dateObj = new Date(date);
               const options = { weekday: "short" };
 
-              // Check if the date is today or yesterday
               if (dateObj.toDateString() === today.toDateString()) {
                 return "Today";
               } else if (
@@ -127,19 +121,23 @@ function Statistics() {
               ) {
                 return "Yesterday";
               } else {
-                // For other days, return the full weekday name
                 return dateObj.toLocaleDateString("en-US", options);
               }
             }}
           />
-          <Tooltip content={<CustomTooltip />} cursor={{fill: '#aaaaaa20'}} />
+          <Tooltip content={<CustomTooltip />} cursor={{ fill: "#aaaaaa20" }} />
           <Bar
-            dataKey="out"
+            dataKey="active"
             stackId="a"
-            fill="#ef7158"
+            fill="#219ebc"
             shape={<RoundedBar />}
           />
-          <Bar dataKey="in" stackId="a" fill="#e8cf9b" shape={<RoundedBar />} />
+          <Bar
+            dataKey="rest"
+            stackId="a"
+            fill="#8ecae6"
+            shape={<RoundedBar />}
+          />
         </BarChart>
       </ResponsiveContainer>
     </div>
