@@ -4,7 +4,7 @@ import Topbar from "../Components/Topbar";
 import Rightbar from "../Components/Rightbar";
 import Statistics from "../Components/Statistics";
 import { RxMixerHorizontal } from "react-icons/rx";
-import { LuChevronDown } from "react-icons/lu";
+import { LuChevronDown, LuUpload } from "react-icons/lu";
 
 function Overview() {
   return (
@@ -26,7 +26,7 @@ function Overview() {
                     <h1 className="text-sm">Heart rate</h1>
                     <div className="flex items-center gap-2">
                       <button class="flex items-center justify-center gap-2 px-4 py-2.5 text-sm rounded-full ring-1 ring-stone-200 hover:bg-stone-200">
-                        <RxMixerHorizontal className="text-lg" />
+                        <LuUpload className="text-lg" />
                         <span>Export</span>
                       </button>
                       <button class="flex items-center justify-center gap-2 pl-4 pr-3 py-2.5 text-sm rounded-full ring-1 ring-stone-200 hover:bg-stone-200">
