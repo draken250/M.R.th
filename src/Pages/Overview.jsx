@@ -84,8 +84,8 @@ function Overview() {
               <table class="p-4 table-auto w-full mt-4 space-between rounded-xl">
                 <tbody>
                   {[...Array(4)].map((_, index) => (
-                    <tr class="space-between p-6 mb-4 ">
-                      <td className="py-2">
+                    <tr class="space-between ">
+                      <td className="py-3">
                         <div class="img">
                           <img
                             class="rounded-full w-12"
