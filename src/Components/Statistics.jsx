@@ -134,7 +134,7 @@ function Statistics() {
           <Bar
             dataKey="out"
             stackId="a"
-            fill="#026fc7"
+            fill="#ef7158"
             shape={<RoundedBar />}
           />
           <Bar dataKey="in" stackId="a" fill="#dff976" shape={<RoundedBar />} />
