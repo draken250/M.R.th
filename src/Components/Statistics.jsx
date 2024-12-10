@@ -100,7 +100,7 @@ function Statistics() {
 
   return (
     <div className="w-full h-fit">
-      <ResponsiveContainer width="100%" height={height ? height : 185}>
+      <ResponsiveContainer width="100%" height="400px">
         <BarChart
           data={income}
           margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
