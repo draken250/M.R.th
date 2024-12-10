@@ -50,7 +50,7 @@ function Overview() {
                   <br />
                   <span className="font-normal text-lg">calories</span>
                 </div>
-                <div class="steps  bg-[#e4d070] p-5 text-2xl font-semibold rounded-3xl flex-1 flex flex-col items-start justify-center">
+                <div class="steps  bg-[#ddd29d] p-5 text-2xl font-semibold rounded-3xl flex-1 flex flex-col items-start justify-center">
                   7,657
                   <br />
                   <span className="font-normal text-lg">steps</span>
