@@ -37,7 +37,8 @@ function Overview() {
                     </div>
                   </div>
                   <h1 className="text-3xl flex items-center gap-2 mb-1">
-                    88 <span className="opacity-40">BPM</span> <GoHeartFill className="text-main-color" />
+                    88 <span className="opacity-40">BPM</span>{" "}
+                    <GoHeartFill className="text-main-color" />
                   </h1>
                   <h1 className="text-sm opacity-45">12 - 19 Jul 2023</h1>
                 </div>
@@ -82,38 +83,40 @@ function Overview() {
 
               <table class="p-4 table-auto w-full mt-4 space-between rounded-xl">
                 <tbody>
-                  <tr class="space-between p-6 ">
-                    <td>
-                      <div class="img">
-                        <img
-                          class="rounded-full w-12"
-                          src="https://img.freepik.com/free-vector/hand-drawn-fat-person-cartoon-illustration_52683-116942.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </td>
-                    <td>
-                      <div class="title">
-                        calories burning
-                        <br />
-                        by niko avocado
-                      </div>
-                    </td>
-                    <td>
-                      <div class="pages">22 pages</div>
-                    </td>
-                    <td class="time">3hr.17min</td>
-                    <td class="level">
-                      <button class=" place-content-center  rounded-full  p-1.5 pr-4 pl-4 bg-yellow-500">
-                        beginner
-                      </button>
-                    </td>
-                    <td class="price">Free</td>
-                    <td>
-                      <button class="btn place-content-center ">open</button>
-                    </td>
-                    <td>...</td>
-                  </tr>
+                  {[...Array(5)].map((_, index) => (
+                    <tr class="space-between p-6 ">
+                      <td className="py-2">
+                        <div class="img">
+                          <img
+                            class="rounded-full w-12"
+                            src="https://img.freepik.com/free-vector/hand-drawn-fat-person-cartoon-illustration_52683-116942.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="title">
+                          calories burning
+                          <br />
+                          by niko avocado
+                        </div>
+                      </td>
+                      <td>
+                        <div class="pages">22 pages</div>
+                      </td>
+                      <td class="time">3hr.17min</td>
+                      <td class="level">
+                        <button class=" place-content-center  rounded-full  p-1.5 pr-4 pl-4 bg-yellow-500">
+                          beginner
+                        </button>
+                      </td>
+                      <td class="price">Free</td>
+                      <td>
+                        <button class="btn place-content-center ">open</button>
+                      </td>
+                      <td>...</td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
