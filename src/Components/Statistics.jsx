@@ -107,7 +107,7 @@ function Statistics() {
           barCategoryGap="0%"
           barSize={50}
         >
-          <CartesianGrid strokeDasharray="5 5" />
+          <CartesianGrid strokeDasharray="5 10=" />
           <XAxis
             dataKey="date"
             tick={{ fontSize: 12 }}
