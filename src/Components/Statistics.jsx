@@ -13,7 +13,7 @@ import {
 function Statistics() {
   const bpmValues = [
     { rest: 60, active: 120 }, // Today
-    { rest: 62, active: 115 }, // Yesterday
+    { rest: 62, active: 145 }, // Yesterday
     { rest: 63, active: 118 }, // 3 days ago
     { rest: 61, active: 122 }, // 4 days ago
     { rest: 65, active: 119 }, // 5 days ago
@@ -44,7 +44,7 @@ function Statistics() {
 
   const RoundedBar = (props) => {
     const { x, y, width, height, fill } = props;
-    const radius = 16;
+    const radius = 18;
     return (
       <Rectangle
         x={x}
@@ -83,7 +83,7 @@ function Statistics() {
             </div>
           </p>
           <p className="text-sm flex items-center justify-start gap-1 pb-1">
-            <div className="h-[20px] w-[4px] rounded-md bg-[#219ebc]"></div>
+            <div className="h-[20px] w-[4px] rounded-md bg-[#ef7158]"></div>
             <div>
               Active BPM: <span className="font-semibold">{payload[1].value}</span>
             </div>
@@ -129,7 +129,7 @@ function Statistics() {
           <Bar
             dataKey="active"
             stackId="a"
-            fill="#219ebc"
+            fill="#ef7158"
             shape={<RoundedBar />}
           />
           <Bar
