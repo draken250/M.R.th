@@ -106,7 +106,7 @@ function Overview() {
                       </td>
                       <td class="time">3hr.17min</td>
                       <td class="level">
-                        <button class=" place-content-center  rounded-full  p-1.5 pr-4 pl-4 bg-yellow-500">
+                        <button class=" place-content-center  rounded-full  p-1.5 pr-4 pl-4 bg-yellow-200">
                           beginner
                         </button>
                       </td>
