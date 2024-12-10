@@ -44,17 +44,17 @@ function Overview() {
                 <Statistics />
               </div>
               <div class="smallerstats w-1/3 min-h-full flex flex-col gap-4">
-                <div class="calories bg-[#dfcdff] p-4 rounded-3xl flex-1">
+                <div class="calories bg-[#dfcdff] p-5 rounded-3xl flex-1 flex flex-col items-start justify-center">
                   245
                   <br />
                   calories
                 </div>
-                <div class="steps  bg-orange-400 p-4 rounded-3xl flex-1">
+                <div class="steps  bg-orange-400 p-5 rounded-3xl flex-1 flex flex-col items-start justify-center">
                   7,657
                   <br />
                   steps
                 </div>
-                <div class="workouts  bg-blue-300 p-4 rounded-3xl flex-1">
+                <div class="workouts  bg-blue-300 p-5 rounded-3xl flex-1 flex flex-col items-start justify-center">
                   4,96km
                   <br />
                   workouts
