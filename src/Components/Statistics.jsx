@@ -8,9 +8,8 @@ import {
   ResponsiveContainer,
   Rectangle,
 } from "recharts";
-import Money from "../utils/Money";
 
-function Statistics({height}) {
+function Statistics() {
   const customValues = [
     { in: 1240.20, out: 1200 }, // For today
     { in: 2430, out: 1024.42 }, // For yesterday
@@ -83,14 +82,14 @@ function Statistics({height}) {
             <div className="h-[20px] w-[4px] rounded-md bg-[#dff976]"></div>
             <div>
               Sent:{" "}
-              <span className="font-semibold">{`$${Money(payload[1].value)}`}</span>
+              <span className="font-semibold">{`$${payload[1].value}`}</span>
             </div>
           </p>
           <p className="text-sm flex items-center justify-start gap-1 pb-1">
             <div className="h-[20px] w-[4px] rounded-md bg-[#026fc7]"></div>
             <div>
               Recieved:{" "}
-              <span className="font-semibold">{`$${Money(payload[0].value)}`}</span>
+              <span className="font-semibold">{`$${payload[0].value}`}</span>
             </div>
           </p>
         </div>
