@@ -109,7 +109,7 @@ function Statistics() {
           barSize={50}
         >
           <CartesianGrid strokeDasharray="5 10" />
-          <YAxis />
+          <YAxis orientation="right" />
           <XAxis
             dataKey="date"
             tick={{ fontSize: 12 }}
