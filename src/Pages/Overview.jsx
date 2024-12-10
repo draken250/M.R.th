@@ -74,10 +74,10 @@ function Overview() {
               <div class="bg-gradient-to-r from-green-600 to-orange-600 p-6 ms-2 me-2 rounded-xl"></div>
             </div> */}
 
-            <div class="recent p-4 ">
+            <div class="recent p-4 mt-5 ">
               <div class=" flex justify-between">
-                <h1 class="text-lg font-bold">My recent</h1>
-                <p class="text-orange-500">see all</p>
+                <h1 class="text-lg font-semibold">My recent</h1>
+                <p class="text-main-color">see all</p>
               </div>
 
               <table class="p-4 table-auto w-full mt-4 space-between rounded-xl">
