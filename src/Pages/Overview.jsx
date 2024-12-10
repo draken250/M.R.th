@@ -3,6 +3,7 @@ import Leftbar from "../Components/Leftbar";
 import Topbar from "../Components/Topbar";
 import Rightbar from "../Components/Rightbar";
 import Statistics from "../Components/Statistics";
+import { RxMixerHorizontal } from "react-icons/rx";
 
 function Overview() {
   return (
@@ -22,7 +23,16 @@ function Overview() {
                 <div className="w-full flex flex-col">
                   <div className="flex justify-between">
                     <h1 className="text-sm font-bold">Heart rate</h1>
-                    <div className="flex"></div>
+                    <div className="flex items-center gap-2">
+                      <button class="flex items-center justify-center gap-2 px-4 py-2 text-sm rounded-full ring-1 ring-stone-200 hover:bg-stone-200">
+                        <RxMixerHorizontal className="text-lg" />
+                        <span>Filters</span>
+                      </button>
+                      <button class="flex items-center justify-center gap-2 px-4 py-2 text-sm rounded-full ring-1 ring-stone-200 hover:bg-stone-200">
+                        <RxMixerHorizontal className="text-lg" />
+                        <span>Filters</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <Statistics />
