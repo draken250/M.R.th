@@ -13,7 +13,7 @@ import {
 function Statistics() {
   const bpmValues = [
     { rest: 60, active: 120 }, // Today
-    { rest: 62, active: 145 }, // Yesterday
+    { rest: 72, active: 145 }, // Yesterday
     { rest: 63, active: 118 }, // 3 days ago
     { rest: 61, active: 122 }, // 4 days ago
     { rest: 65, active: 119 }, // 5 days ago

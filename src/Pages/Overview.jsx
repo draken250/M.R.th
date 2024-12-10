@@ -13,7 +13,9 @@ function Overview() {
           <div class="side1 p-4 ml-4 w-2/3  ">
             <div class="intro m-4">
               <h1 class="text-xl font-bold"> Hi ,orleon studio</h1>
-              <p class="text-sm opacity-60">effortlessly records and analyze your life</p>
+              <p class="text-sm opacity-60">
+                effortlessly records and analyze your life
+              </p>
             </div>
             <div class="stats flex  ">
               <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black m-2 rounded-xl ">
