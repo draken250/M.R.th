@@ -22,13 +22,13 @@ function Overview() {
               <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black m-2 rounded-xl ">
                 <div className="w-full flex flex-col">
                   <div className="flex justify-between">
-                    <h1 className="text-sm font-bold">Heart rate</h1>
+                    <h1 className="text-sm">Heart rate</h1>
                     <div className="flex items-center gap-2">
-                      <button class="flex items-center justify-center gap-2 px-4 py-2 text-sm rounded-full ring-1 ring-stone-200 hover:bg-stone-200">
+                      <button class="flex items-center justify-center gap-2 px-4 py-2.5 text-sm rounded-full ring-1 ring-stone-200 hover:bg-stone-200">
                         <RxMixerHorizontal className="text-lg" />
                         <span>Filters</span>
                       </button>
-                      <button class="flex items-center justify-center gap-2 px-4 py-2 text-sm rounded-full ring-1 ring-stone-200 hover:bg-stone-200">
+                      <button class="flex items-center justify-center gap-2 px-4 py-2.5 text-sm rounded-full ring-1 ring-stone-200 hover:bg-stone-200">
                         <RxMixerHorizontal className="text-lg" />
                         <span>Filters</span>
                       </button>
