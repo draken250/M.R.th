@@ -5,6 +5,7 @@ import Rightbar from "../Components/Rightbar";
 import Statistics from "../Components/Statistics";
 import { RxMixerHorizontal } from "react-icons/rx";
 import { LuChevronDown, LuUpload } from "react-icons/lu";
+import { GoHeartFill } from "react-icons/go";
 
 function Overview() {
   return (
@@ -36,7 +37,7 @@ function Overview() {
                     </div>
                   </div>
                   <h1 className="text-2xl">
-                    88 <span>BPM</span>
+                    88 <span className="opacity-40">BPM</span> <GoHeartFill className="text-main-color" />
                   </h1>
                 </div>
                 <Statistics />
