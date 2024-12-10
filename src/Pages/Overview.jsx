@@ -55,7 +55,7 @@ function Overview() {
                   <br />
                   <span className="font-normal text-lg">steps</span>
                 </div>
-                <div class="workouts  bg-[#fdc3f6] p-5 text-2xl font-semibold rounded-3xl flex-1 flex flex-col items-start justify-center">
+                <div class="workouts  bg-[#f0c3e2] p-5 text-2xl font-semibold rounded-3xl flex-1 flex flex-col items-start justify-center">
                   4,96 km
                   <br />
                   <span className="font-normal text-lg">workouts</span>
