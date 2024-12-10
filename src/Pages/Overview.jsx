@@ -83,7 +83,7 @@ function Overview() {
 
               <table class="p-4 table-auto w-full mt-4 space-between rounded-xl">
                 <tbody>
-                  {[...Array(5)].map((_, index) => (
+                  {[...Array(4)].map((_, index) => (
                     <tr class="space-between p-6 ">
                       <td className="py-2">
                         <div class="img">
@@ -98,7 +98,7 @@ function Overview() {
                         <div class="title">
                           calories burning
                           <br />
-                          by niko avocado
+                          <span className="">by niko avocado</span>
                         </div>
                       </td>
                       <td>
