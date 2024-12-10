@@ -21,8 +21,8 @@ function Overview() {
               </p>
             </div>
             <div class="stats flex  ">
-              <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black m-2 rounded-xl ">
-                <div className="w-full flex flex-col mb-4">
+              <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black m-2 rounded-xl mb-4 ">
+                <div className="w-full flex flex-col">
                   <div className="flex justify-between">
                     <h1 className="text-sm">Heart rate</h1>
                     <div className="flex items-center gap-2">
@@ -36,7 +36,7 @@ function Overview() {
                       </button>
                     </div>
                   </div>
-                  <h1 className="text-2xl">
+                  <h1 className="text-2xl flex items-center gap-1 mb-3">
                     88 <span className="opacity-40">BPM</span> <GoHeartFill className="text-main-color" />
                   </h1>
                 </div>
