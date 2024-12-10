@@ -21,7 +21,7 @@ function Overview() {
               </p>
             </div>
             <div class="stats flex ">
-              <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black m-2 rounded-3xl ">
+              <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black rounded-3xl ">
                 <div className="w-full flex flex-col mb-5">
                   <div className="flex justify-between items-center">
                     <h1 className="text-base">Heart rate</h1>
