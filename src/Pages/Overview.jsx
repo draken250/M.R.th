@@ -16,7 +16,7 @@ function Overview() {
               <p class="text-sm opacity-60">effortlessly records and analyze your life</p>
             </div>
             <div class="stats flex  ">
-              <div class="heartrate w-2/3 p-4 bg-white text-black m-2 rounded-xl ">
+              <div class="heartrate w-2/3 px-4 pt-4 pb-2 bg-white text-black m-2 rounded-xl ">
                 <Statistics />
               </div>
               <div class="smallerstats w-1/3  ">
