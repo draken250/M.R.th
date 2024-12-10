@@ -79,7 +79,7 @@ function Statistics() {
             On {formattedDate}
           </p>
           <p className="text-sm flex items-center justify-start gap-1 pb-1">
-            <div className="h-[20px] w-[4px] rounded-md bg-[#dff976]"></div>
+            <div className="h-[20px] w-[4px] rounded-md bg-[#e8cf9b]"></div>
             <div>
               Sent:{" "}
               <span className="font-semibold">{`$${payload[1].value}`}</span>
@@ -105,7 +105,7 @@ function Statistics() {
           data={income}
           margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
           barCategoryGap="0%"
-          barSize={40}
+          barSize={50}
         >
           <CartesianGrid strokeDasharray="5 5" />
           <XAxis
@@ -137,7 +137,7 @@ function Statistics() {
             fill="#ef7158"
             shape={<RoundedBar />}
           />
-          <Bar dataKey="in" stackId="a" fill="#dff976" shape={<RoundedBar />} />
+          <Bar dataKey="in" stackId="a" fill="#e8cf9b" shape={<RoundedBar />} />
         </BarChart>
       </ResponsiveContainer>
     </div>
