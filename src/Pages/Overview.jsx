@@ -47,17 +47,17 @@ function Overview() {
                 <div class="calories bg-[#dfcdff] p-5 text-2xl font-semibold rounded-3xl flex-1 flex flex-col items-start justify-center">
                   245
                   <br />
-                  calories
+                  <span className="font-normal text-lg">calories</span>
                 </div>
                 <div class="steps  bg-orange-400 p-5 text-2xl font-semibold rounded-3xl flex-1 flex flex-col items-start justify-center">
                   7,657
                   <br />
-                  steps
+                  <span className="font-normal text-lg">steps</span>
                 </div>
                 <div class="workouts  bg-blue-300 p-5 text-2xl font-semibold rounded-3xl flex-1 flex flex-col items-start justify-center">
                   4,96 km
                   <br />
-                  workouts
+                  <span className="font-normal text-lg">workouts</span>
                 </div>
               </div>
             </div>
