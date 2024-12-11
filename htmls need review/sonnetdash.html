@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness App Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="container mx-auto px-4 py-8">
+    <!-- Header -->
+    <header class="flex justify-between items-center mb-6">
+      <h1 class="text-2xl font-bold">Fitness App Dashboard</h1>
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2">
+          <span class="text-gray-600">Welcome Back!</span>
+          <img src="https://i.pravatar.cc/40" alt="User Avatar" class="w-8 h-8 rounded-full">
+        </div>
+        <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">Join the community</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Heart Rate -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-bold">Heart rate</h2>
+          <div class="flex items-center space-x-2">
+            <span class="text-gray-600">12 - 19 Jul 2023</span>
+            <button class="bg-gray-200 hover:bg-gray-300 p-2 rounded-md">
+              <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <span class="text-4xl font-bold">88</span>
+            <span class="text-red-500 font-bold">BPM</span>
+          </div>
+          <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">Export</button>
+        </div>
+        <div class="mt-4">
+          <img src="https://picsum.photos/id/1/640/200" alt="Heart rate chart" class="w-full rounded-lg">
+        </div>
+        <p class="text-gray-600 mt-2">Average heart rate: 88 BPM</p>
+      </div>
+
+      <!-- Fitness Goals -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-lg font-bold mb-4">Fitness Goals</h2>
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-xl font-bold">245</h3>
+            <p class="text-gray-600">Calories</p>
+          </div>
+          <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">Set Fitness Goals</button>
+        </div>
+        <div class="h-4 bg-gray-300 rounded-full">
+          <div class="h-full bg-blue-500 rounded-full" style="width: 76%;"></div>
+        </div>
+        <p class="text-gray-600 mt-2">You have reached 76% of your goal this month</p>
+      </div>
+
+      <!-- Workout Statistics -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-lg font-bold mb-4">Workout Statistics</h2>
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-xl font-bold">7,567</h3>
+            <p class="text-gray-600">Steps</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-gray-600">This Week</span>
+            <button class="bg-gray-200 hover:bg-gray-300 p-2 rounded-md">
+              <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-xl font-bold">4.96 km</h3>
+            <p class="text-gray-600">Workouts</p>
+          </div>
+          <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium">View Detail</button>
+        </div>
+      </div>
+
+      <!-- My Exercise -->
+      <div class="bg-white shadow-md rounded-lg p-6 col-span-1 md:col-span-2 lg:col-span-3">
+        <h2 class="text-lg font-bold mb-4">My Exercise</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full table-auto">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="px-4 py-2 text-left">Name of Exercise</th>
+                <th class="px-4 py-2 text-left">Set</th>
+                <th class="px-4 py-2 text-left">Reps</th>
+                <th class="px-4 py-2 text-left">Weight</th>
+                <th class="px-4 py-2 text-left">Total Calories</th>
+                <th class="px-4 py-2 text-left">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-200">
+                <td class="px-4 py-2">Biceps and Chest</td>
+                <td class="px-4 py-2">15 Sets</td>
+                <td class="px-4 py-2">15-20 Repetition</td>
+                <td class="px-4 py-2">50 kg-60 kg</td>
+                <td class="px-4 py-2">150 Cal</td>
+                <td class="px-4 py-2 text-green-500">Complete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- Challenge Invitation -->
+    <div class="bg-white shadow-md rounded-lg p-6 mt-6">
+      <h2 class="text-lg font-bold mb-4">Challenge Invitation</h2>
+      <div class="flex items-center justify-between">
+        <img src="https://picsum.photos/id/2/200/200" alt="Challenge Image" class="w-24 h-24 rounded-lg">
+        <div>
+          <p class="text-gray-600">Join our next event #5</p>
+          <p class="text-sm font-bold">25 Jun 2023</p>
+        </div>
+        <div>
+          <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium">Accept</button>
+          <button class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-md text-sm font-medium">Reject</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Daily Tasks -->
+    <div class="bg-white shadow-md rounded-lg p-6 mt-6">
+      <h2 class="text-lg font-bold mb-4">My daily tasks</h2>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <img src="https://picsum.photos/id/3/32/32" alt="Home workouts" class="w-8 h-8">
+            <span>Home workouts</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-gray-600">3/15</span>
+            <button class="bg-gray-200 hover:bg-gray-300 p-2 rounded-md">
+              <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <img src="https://picsum.photos/id/4/32/32" alt="Plank" class="w-8 h-8">
+            <span>Plank</span>
+          </div>
+          <div>00:30</div>
+        </div>
+        <!-- Add more tasks -->
+      </div>
+      <p class="text-gray-600 mt-4">You have 15 new tasks remaining</p>
+    </div>
+  </div>
+
+  <script>
+    // Add any necessary JavaScript functionality
+  </script>
+</body>
+</html>

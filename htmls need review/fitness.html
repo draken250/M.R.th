@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness App Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <div class="container mx-auto p-6 lg:p-10">
+   
+
+    <div class="container ">
+        <div class="flex items-center justify-between mb-6">
+            <div class="welcome">
+                <p class="text-md">Goodmorning</p>
+                <p class="text-2xl">Welcome back!</p> 
+            </div>
+            <div class="profile flex gap-6">
+                <div class="data">
+                    <p class="text-sm">weight balance</p>
+                    <p class="bold">73kg</p>
+                </div>
+                <div class="data">
+                    <p class="text-sm">Heart rate</p>
+                    <p class="bold">90bpm</p>
+                </div>
+                <div class="data">
+                    <p class="text-sm">Hydration level</p>
+                    <p class="bold">86%</p>
+                </div><div class="data">
+                    <p class="text-sm">Blood Presure</p>
+                    <p class="bold">11</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class=" flex gap-6">
+      <div class="bg-gray-800 rounded-lg p-6 flex flex-col justify-between w-2/3">
+        <div class="flex items-center justify-between">
+        <div> 
+          <p class=" text-2xl font-bold">Calisthenics Workout</p>
+          <p class="text-gray-400">the next biggest thing in next door lorem</p>
+        </div>
+        <div class="flex gap-2">
+            <select  class="bg-transparent hover:bg-gray-600 px-4 py-2 rounded-md text-sm border" name="workout" id="">
+                <option value="option1">This week</option>
+                <option value="option2">This month</option>
+                <option value="option3">This year</option>
+            </select>
+          <button class="bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md text-sm font-medium">+ Add Workout</button>
+        </div> 
+
+        </div>
+
+        <div class="flex gap-2 justify-between items-center mt-4">
+          <div class=" flex border w-1/2 p-4 rounded-lg">
+                <div class="w-1/2 flex flex-col gap-2">
+                    <img class="w-9" src="../public/favicon.png" alt="">
+                    <p>Progress</p>
+                    <p>Upperbody</p>
+                    <div class="flex gap-2 py-2">
+                        <button class="rounded-full px-2  bg-gray-700  ">biceps</button>
+                        <button> 2 hours</button>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="relative"> 
+                      <canvas id="targetChart"></canvas>
+                    </div>
+                  </div> 
+          </div>
+
+          <div class=" border w-1/2 p-4 rounded-lg">
+            <div class="w-1/2">
+            </div>
+            <div class="w-1/2">
+            </div>
+         <button class="bg-gray-700">contiues the exercise</button> 
+      </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-6 w-1/3">
+        <h2 class="text-xl font-bold mb-4">Fitness Goals</h2>
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-lg font-bold">Daily Goal</h3>
+            <p class="text-gray-400">100/140kCal</p>
+          </div>
+          <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium">Set Fitness Goals</button>
+        </div>
+        <div class="h-4 bg-gray-700 rounded-full">
+          <div class="h-full bg-blue-600 rounded-full" style="width: 76%;"></div>
+        </div>
+        <p class="text-gray-400 mt-2">You have reached 76% of your goal this month</p>
+      </div>
+
+      <!-- <div class="bg-gray-800 rounded-lg p-6">
+        <h2 class="text-xl font-bold mb-4">Workout Statistics</h2>
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-lg font-bold">This Week</h3>
+            <p class="text-gray-400">150 Kcal</p>
+          </div>
+          <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium">View Detail</button>
+        </div>
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-lg font-bold">Run Activity</h3>
+            <p class="text-gray-400">120 Cal, 2.0 Km</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">Yesterday</span>
+            <button class="bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded-md text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="bg-gray-800 rounded-lg p-6 mt-6">
+      <h2 class="text-xl font-bold mb-4">My Exercise</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full table-auto">
+          <thead>
+            <tr class="bg-gray-700">
+              <th class="px-4 py-2 text-left">Name of Exercise</th>
+              <th class="px-4 py-2 text-left">Set</th>
+              <th class="px-4 py-2 text-left">Reps</th>
+              <th class="px-4 py-2 text-left">Weight</th>
+              <th class="px-4 py-2 text-left">Total Calories</th>
+              <th class="px-4 py-2 text-left">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-700">
+              <td class="px-4 py-2">Biceps and Chest</td>
+              <td class="px-4 py-2">15 Sets</td>
+              <td class="px-4 py-2">15-20 Repetition</td>
+              <td class="px-4 py-2">50 kg-60 kg</td>
+              <td class="px-4 py-2">150 Cal</td>
+              <td class="px-4 py-2 text-green-500">Complete</td>
+            </tr>
+            <!-- Add more exercise rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize charts
+    const targetChart = new Chart(document.getElementById('targetChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Consumed', 'Remaining'],
+        datasets: [{
+          data: [237, 128],
+          backgroundColor: ['#FF6B6B', '#D3D3D3'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        cutoutPercentage: 60,
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        }
+      }
+    });
+
+    const standChart = new Chart(document.getElementById('standChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Stand'],
+        datasets: [
+          {
+            label: 'Stand',
+            data: [375],
+            backgroundColor: '#4CAF50'
+          }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 500
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+
+    const exerciseChart = new Chart(document.getElementById('exerciseChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Exercise'],
+        datasets: [
+          {
+            label: 'Exercise',
+            data: [19],
+            backgroundColor: '#FF9800'
+          }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 30
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+
+    const moveChart = new Chart(document.getElementById('moveChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Move'],
+        datasets: [
+          {
+            label: 'Move',
+            data: [4],
+            backgroundColor: '#673AB7'
+          }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 12
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+
+    const heartBeatChart = new Chart(document.getElementById('heartBeatChart'), {
+      type: 'line',
+      data: {
+        labels: ['', '', '', '', '', '', '', '', ''],
+        datasets: [
+          {
+            data: [89, 90, 88, 91, 87, 89, 90, 88, 89],
+            backgroundColor: 'transparent',
+            borderColor: '#2196F3',
+            borderWidth: 2
+          }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100
+          },
+          x: {
+            display: false
+          }
+        },
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
