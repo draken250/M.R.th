@@ -4,8 +4,9 @@ import Topbar from "../Components/Topbar";
 import Rightbar from "../Components/Rightbar";
 import Statistics from "../Components/Statistics";
 import { RxMixerHorizontal } from "react-icons/rx";
-import { LuChevronDown, LuUpload } from "react-icons/lu";
+import { LuChevronDown, LuMoreHorizontal, LuUpload, LuX } from "react-icons/lu";
 import { GoHeartFill } from "react-icons/go";
+import { Doc2 } from "../assets";
 
 function Overview() {
   return (
@@ -122,10 +123,149 @@ function Overview() {
             </div>
           </div>
 
-          <div class="side2  bg-green-500 p-4 mt-4 mb-4 mr-4 w-1/3 rounded-xl ">
-            <p class=" ">my daily tasks</p>
-            <h1>you have 15 new tasks remaining</h1>
-            <div>home workouts</div>
+          <div class="side2  bg-[#c2da61] h-fit p-6 mt-4 mb-4 mr-4 w-1/3 rounded-3xl ">
+            <div class="w-full flex flex-col">
+              {/* header */}
+              <div class="flex justify-between items-center mb-5">
+                <button className="h-[42px] w-[42px] bg-stone-100/70 flex items-center justify-center rounded-full text-black cursor-pointer">
+                  <LuX />
+                </button>
+                <span class="ml-2 text-sm text-black font-medium">
+                  My daily tasks
+                </span>
+                <img
+                  src={Doc2}
+                  alt="Home Workouts"
+                  class="h-10 w-10 rounded-full"
+                />
+              </div>
+              {/* title */}
+              <h1 class="text-2xl text-black/90 font-semibold leading-7 text-center w-full mx-auto mb-5">
+                You have new tasks
+                <br /> remaining
+              </h1>
+
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center gap-1">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/017/609/000/non_2x/minimal-house-icon-website-symbol-site-sign-ui-home-icon-home-creative-icon-minimalist-vector.jpg"
+                    alt="Home Workouts"
+                    class="h-12 w-12 rounded-full"
+                  />
+                  <span class="ml-2 text-sm font-semibold text-black/90 flex flex-col gap-0.5">
+                    Home workouts
+                    <span className="font-normal text-xs text-black/80">
+                      Task (3/15)
+                    </span>
+                  </span>
+                </div>
+                <p class="text-xl text-black/90">
+                  <LuMoreHorizontal />
+                </p>
+              </div>
+              <ul class="mt-2 space-y-2.5">
+                <label class="flex items-center justify-between bg-white p-3.5 rounded-2xl shadow-sm cursor-pointer">
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="h-4 w-4 border-red-400 accent-main-color text-white"
+                    />
+                    <span class="ml-2 text-sm text-gray-800 font-medium">
+                      Plank
+                    </span>
+                  </div>
+                  <span class="text-xs text-gray-500">00:30</span>
+                </label>
+                <label class="flex items-center justify-between bg-white p-3.5 rounded-2xl shadow-sm cursor-pointer">
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="h-4 w-4 border-red-400 accent-main-color text-white"
+                    />
+                    <span class="ml-2 text-sm text-gray-800 font-medium">
+                      Squats
+                    </span>
+                  </div>
+                  <span class="text-xs text-gray-500">25x</span>
+                </label>
+                <label class="flex items-center justify-between bg-white p-3.5 rounded-2xl shadow-sm cursor-pointer">
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="h-4 w-4 border-red-400 accent-main-color text-white"
+                    />
+                    <span class="ml-2 text-sm text-gray-800 font-medium">
+                      Sit-ups
+                    </span>
+                  </div>
+                  <span class="text-xs text-gray-500">30x</span>
+                </label>
+                <label class="flex items-center justify-between bg-white opacity-65 pointer-events-none p-3.5 rounded-2xl shadow-sm cursor-pointer">
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      checked={true}
+                      class="h-4 w-4 border-red-400 accent-main-color text-white"
+                    />
+                    <span class="ml-2 text-sm text-gray-800 font-medium line-through">
+                      Jumping Jacks
+                    </span>
+                  </div>
+                  <span class="text-xs text-gray-500">40x</span>
+                </label>
+                <label class="flex items-center justify-between bg-white opacity-40 pointer-events-none p-3.5 rounded-2xl shadow-sm cursor-pointer">
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      checked={true}
+                      class="h-4 w-4 border-red-400 accent-main-color text-white"
+                    />
+                    <span class="ml-2 text-sm text-gray-800 font-medium line-through">
+                      Push-ups
+                    </span>
+                  </div>
+                  <span class="text-xs text-gray-500">10x</span>
+                </label>
+              </ul>
+            </div>
+
+            <div class="mt-6 flex flex-col gap-4 w-full">
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center flex-col gap-1">
+                  <h1 class=" text-base font-semibold text-black/90 flex gap-1 items-center">
+                    Challenge Invitation
+                    <div className="font-medium text-xs h-5 w-5 text-white bg-black/80 rounded-full flex items-center justify-center">
+                      8
+                    </div>
+                  </h1>
+                  <span className="font-normal text-xs text-black">
+                  From June to December, 2023
+                  </span>
+                </div>
+                <p class="text-xl text-black/90">
+                  <LuMoreHorizontal />
+                </p>
+              </div>
+              <div class=" bg-white p-5 rounded-3xl shadow-md text-center">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWG2zBNcDrhc3te-UGivdPovLx1UdFFe91pg&s"
+                  alt="Challenge"
+                  class="mx-auto mb-1"
+                />
+                <p class="text-xl text-gray-800 font-medium">
+                  Join our next event #5
+                </p>
+                <p class="text-xs text-gray-500">25 Jun, 2023</p>
+                <div class="mt-6 flex justify-around w-full gap-2">
+                  <button class="w-full bg-main-color text-white font-semibold px-4 py-2.5 rounded-2xl text-sm">
+                    Accept
+                  </button>
+                  <button class="w-full bg-gray-300 text-black font-semibold px-4 py-2.5 rounded-2xl text-sm">
+                    Reject
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
