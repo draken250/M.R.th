@@ -16,13 +16,13 @@ function Overview() {
         <div class="flex w-full h-full">
           <div class="side1 p-4 ml-4 w-2/3  ">
             <div class="intro m-4">
-              <h1 class="text-xl font-bold"> Hi ,orleon studio</h1>
-              <p class="text-sm opacity-60">
-                effortlessly records and analyze your life
+              <h1 class="text-2xl font-bold bg-transparent dark:bg-transparent dark:text-text-dark mb-2 "> Welcome back ,Thierry</h1>
+              <p class="text-md opacity-60 bg-transparent dark:bg-transparent dark:text-text-dark mb-6">
+                effortlessly records and analyze your Health in one place
               </p>
             </div>
             <div class="stats flex gap-4">
-              <div class="heartrate w-3/4 px-4 pt-4 pb-2 bg-white text-black rounded-3xl ">
+              <div class="heartrate w-3/4 px-4 pt-4 pb-2 bg-gray-100 text-black rounded-3xl ">
                 <div className="w-full flex flex-col mb-5">
                   <div className="flex justify-between items-center">
                     <h1 className="text-base">Heart rate</h1>
@@ -78,50 +78,54 @@ function Overview() {
 
             <div class="recent p-4 mt-5 ">
               <div class=" flex justify-between">
-                <h1 class="text-lg font-semibold">My recent</h1>
-                <p class="text-main-color">see all</p>
+                <h1 class=" font-bold bg-transparent dark:bg-transparent dark:text-text-dark text-2xl">My recent</h1>
+                <p class="text-main-color text-md">see all</p>
               </div>
+            </div>
 
-              <table class="p-4 table-auto w-full mt-4 space-between rounded-xl">
+               
+              <div className="bg-white dark:bg-dark-gray-dark p-4 mt-4 rounded-3xl w-full "> 
+              <table class=" table-auto w-full   space-between">
                 <tbody>
                   {[...Array(4)].map((_, index) => (
                     <tr class="space-between ">
                       <td className="py-3">
                         <div class="img">
                           <img
-                            class="rounded-full w-12"
+                            class="rounded-full w-12 "
                             src="https://img.freepik.com/free-vector/hand-drawn-fat-person-cartoon-illustration_52683-116942.jpg"
                             alt=""
                           />
                         </div>
                       </td>
                       <td>
-                        <div class="title">
+                        <div className="title  bg-transparent dark:bg-transparent dark:text-text-dark">
                           Calories burning
                           <br />
-                          <span className="text-black/60">By niko avocado</span>
+                          <span className="text-black/60  bg-transparent dark:bg-transparent dark:text-text-dark">By niko avocado</span>
                         </div>
                       </td>
                       <td>
-                        <div class="pages">22 pages</div>
+                        <div className="pages  bg-transparent dark:bg-transparent dark:text-text-dark">22 pages</div>
                       </td>
-                      <td class="time">3hr.17min</td>
-                      <td class="level">
-                        <button class=" place-content-center  rounded-full  p-1.5 pr-4 pl-4 bg-yellow-500/30">
+                      <td className="time  bg-transparent dark:bg-transparent dark:text-text-dark">3hr.17min</td>
+                      <td className="level">
+                        <button className="bg-yellow-500/60 dark:bg-yellow-500/90 dark:text-text-dark place-content-center  rounded-full  p-1.5 pr-4 pl-4 ">
                           beginner
                         </button>
                       </td>
-                      <td class="price">Free</td>
+                      <td className="price  bg-transparent dark:bg-transparent dark:text-text-dark">Free</td>
                       <td>
-                        <button class="btn place-content-center ">open</button>
+                        <button className="btn place-content-center       dark:text-text-dark ">open</button>
                       </td>
-                      <td>...</td>
+                      <td className="bg-transparent dark:bg-transparent dark:text-text-dark">...</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
-            </div>
-          </div>
+
+              </div>
+            </div> 
 
           <div class="side2  bg-[#c2da61] h-fit p-6 mt-4 mb-4 mr-4 w-1/3 rounded-3xl ">
             <div class="w-full flex flex-col">

@@ -46,7 +46,7 @@ function Diet() {
     {
       id: 5,
       imgSrc:
-        "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&h=350&fit=crop",
+        "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Spicy Thai Noodles",
       description: "A bold and flavorful noodle dish.",
       time: "35 mins",
@@ -97,37 +97,37 @@ function Diet() {
     <div className="flex flex-col items-start justify-start bg-main-body dark:bg-main-body-dark">
       <Topbar />
       <div class="min-h-screen h-full flex flex-col w-full text-grey">
-        <div class="flex px-5 pb-5 bg-main-body w-full h-full flex-1">
+        <div class="flex px-5 pb-5 bg-main-body dark:bg-main-body-dark w-full h-full flex-1">
           <aside class="bg-transparent w-56 p-4">
             <ul class="space-y-2">
               <li>
-                <a href="#" class="hover:text-main-color text-sm">
+                <a href="#" class="hover:text-main-color text-sm bg-transparent dark:bg-transparent dark:text-text-dark">
                   Cooking Courses
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:text-main-color text-sm">
+                <a href="#" class="hover:text-main-color text-sm bg-transparent dark:bg-transparent dark:text-text-dark">
                   Recently Viewed
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:text-main-color text-sm">
+                <a href="#" class="hover:text-main-color text-sm bg-transparent dark:bg-transparent dark:text-text-dark">
                   Weekly Prep
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:text-main-color text-sm">
+                <a href="#" class="hover:text-main-color text-sm bg-transparent dark:bg-transparent dark:text-text-dark">
                   Saved Recipes
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:text-main-color text-sm">
+                <a href="#" class="hover:text-main-color text-sm bg-transparent dark:bg-transparent dark:text-text-dark">
                   Recipe Categories
                 </a>
               </li>
               {recipeCategories.map((category) => (
                 <li key={category.id} className="pl-3">
-                  <a href="#" class="hover:text-main-color text-sm">
+                  <a href="#" class="hover:text-main-color text-sm bg-transparent dark:bg-transparent dark:text-text-dark">
                     {category.category}
                   </a>
                 </li>
@@ -135,19 +135,19 @@ function Diet() {
             </ul>
           </aside>
 
-          <main class="flex-1 p-7 bg-white rounded-3xl w-full min-h-full">
+          <main class="flex-1 p-7 bg-white  dark:bg-dark-gray-dark rounded-3xl w-full min-h-full">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 text-gray-800">
               <div>
-                <h1 class="text-2xl font-semibold">Saved Recipes</h1>
-                <p class="text-gray-400 text-sm">8 recipes</p>
+                <h1 class="text-2xl font-semibold bg-transparent dark:bg-transparent dark:text-text-dark">Saved Recipes</h1>
+                <p class="text-gray-400 text-sm bg-transparent dark:bg-transparent dark:text-text-dark">8 recipes</p>
               </div>
               <div class="flex flex-wrap items-center gap-2">
                 <button class="flex items-center justify-center gap-2 px-4 py-2 text-sm rounded-full hover:bg-stone-200">
-                  <RxMixerHorizontal className="text-lg" />
-                  <span>Filters</span>
+                  <RxMixerHorizontal className="text-lg bg-transparent dark:bg-transparent dark:text-text-dark" />
+                  <span className="bg-transparent dark:bg-transparent dark:text-text-dark">Filters</span>
                 </button>
                 <button class="flex items-center gap-2 px-4 py-2 text-sm bg-main-color text-white rounded-full hover:bg-main-color">
-                  <RiShareFill className="text-lg" />
+                  <RiShareFill className="text-lg bg-transparent dark:bg-transparent dark:text-text-dark" />
                   Share
                 </button>
               </div>
@@ -163,30 +163,30 @@ function Diet() {
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
+                className="bg-transparent dark:bg-transparent dark:text-text-dark text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
               >
-                <LuCoffee className="text-2xl" />
+                <LuCoffee className="text-2xl bg-transparent dark:bg-transparent dark:text-text-dark" />
                 Breakfasts
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-main-color"
+                className=" bg-transparent dark:bg-transparent dark:text-text-dark text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-main-color"
               >
-                <BiBowlRice className="text-2xl" />
+                <BiBowlRice className="bg-transparent dark:bg-transparent dark:text-text-dark text-2xl" />
                 Lunches
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-main-color"
+                className="bg-transparent dark:bg-transparent dark:text-text-dark text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-main-color"
               >
-                <LuDessert className="text-2xl" />
+                <LuDessert className="bg-transparent dark:bg-transparent dark:text-text-dark text-2xl" />
                 Desserts
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-main-color"
+                className="bg-transparent dark:bg-transparent dark:text-text-dark text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90  hover:text-main-color"
               >
-                <PiWine className="text-2xl" />
+                <PiWine className="bg-transparent dark:bg-transparent dark:text-text-dark text-2xl" />
                 Dinner
               </a>
               {/* <a
@@ -197,23 +197,23 @@ function Diet() {
               </a> */}
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
+                className="bg-transparent dark:bg-transparent dark:text-text-dark text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
               >
-                <LuCookie className="text-2xl" />
+                <LuCookie className="bg-transparent dark:bg-transparent dark:text-text-dark text-2xl" />
                 Snacks
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
+                className="bg-transparent dark:bg-transparent dark:text-text-dark text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
               >
-                <TbSoup className="text-2xl" />
+                <TbSoup className="bg-transparent dark:bg-transparent dark:text-text-dark text-2xl" />
                 Soups
               </a>
               <a
                 href="#"
-                className="text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
+                className="bg-transparent dark:bg-transparent dark:text-text-dark text-sm font-medium flex flex-col items-center justify-center px-0 min-w-[60px] gap-2 text-black/90 hover:text-main-color"
               >
-                <LuVegan className="text-2xl" />
+                <LuVegan className="bg-transparent dark:bg-transparent dark:text-text-dark text-2xl" />
                 Vegan
               </a>
             </div>
@@ -221,7 +221,7 @@ function Diet() {
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-4 w-full">
               {recipes.map((recipe) => (
                 <div
-                  className="bg-main-body rounded-2xl overflow-hidden"
+                  className="bg-main-body dark:bg-main-body-dark rounded-2xl overflow-hidden"
                   key={recipe.id}
                 >
                   <div class="relative">
@@ -229,16 +229,16 @@ function Diet() {
                       src={recipe.imgSrc}
                       class="w-full h-40 object-cover brightness-90"
                     />
-                    <button class="absolute bottom-2 left-2 px-2 py-1 flex items-center gap-1 bg-white shadow text-black/70 text-xs font-medium rounded-full ">
+                    <button class="absolute bottom-2 left-2 px-2 py-1 flex items-center gap-1 bg-white dark:bg-dark-gray-dark shadow text-black/70 text-xs font-medium rounded-full   dark:  dark:text-text-dark ">
                       <PiCookingPot />
                       {recipe.time}
                     </button>
                   </div>
                   <div class="p-4">
-                    <h2 class="text-lg font-normal leading-6 mb-2">
+                    <h2 class="text-lg font-normal leading-6 mb-2  dark:  dark:text-text-dark ">
                       {recipe.title}
                     </h2>
-                    <p class="text-sm text-black/80">{recipe.description}</p>
+                    <p class="text-sm text-black/80  dark:  dark:text-text-dark">{recipe.description}</p>
                   </div>
                 </div>
               ))}
