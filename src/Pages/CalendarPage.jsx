@@ -90,10 +90,7 @@ function CalendarPage() {
       mediaQuery.removeEventListener("change", handleChange);
     };
   }, []);
-
-  const handleClick = () => {
-    setIsDarkMode((prev) => !prev);
-  };
+  
   const monthCellRender = (value) => {
     const num = getMonthData(value);
     return num ? (
