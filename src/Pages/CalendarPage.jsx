@@ -20,11 +20,11 @@ const getListData = (value) => {
       listData = [
         {
           type: "warning",
-          content: "This is warning event.",
+          content: "Failed to book appointment.",
         },
         {
           type: "success",
-          content: "This is usual event.",
+          content: "doctor kwizera is availale.",
         },
         {
           type: "error",
