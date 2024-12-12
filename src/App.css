@@ -8,7 +8,8 @@
 }
 
 body{
-  background-color: #f1efee;
+  /* background-color: #f1efee; */
+  color-scheme: light dark;
 }
 
 .card1 {

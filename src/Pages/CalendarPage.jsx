@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Topbar from "../Components/Topbar";
-import { Badge, Calendar } from "antd";
+import { ConfigProvider, theme, Badge, Calendar, Button } from "antd";
 const getListData = (value) => {
   let listData = []; // Specify the type of listData
   switch (value.date()) {
@@ -71,6 +71,29 @@ const getMonthData = (value) => {
 };
 
 function CalendarPage() {
+  const { defaultAlgorithm, darkAlgorithm } = theme;
+  const [isDarkMode, setIsDarkMode] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleChange = (event) => {
+      setIsDarkMode(event.matches);
+    };
+
+    // Listen for changes in the dark mode preference
+    mediaQuery.addEventListener("change", handleChange);
+
+    // Cleanup listener on component unmount
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
+
+  const handleClick = () => {
+    setIsDarkMode((prev) => !prev);
+  };
   const monthCellRender = (value) => {
     const num = getMonthData(value);
     return num ? (
@@ -98,10 +121,19 @@ function CalendarPage() {
     return info.originNode;
   };
   return (
-    <div className="flex flex-col items-start justify-start bg-main-body dark:bg-main-body-dark">
+    <div className="flex flex-col items-start justify-start bg-main-body dark:bg-main-body-dark h-full">
       <Topbar />
-      <div>
-        <Calendar cellRender={cellRender} />
+      <div className="mt-6 px-5">
+        <ConfigProvider
+          theme={{
+            algorithm: isDarkMode ? darkAlgorithm : defaultAlgorithm,
+            token: {
+              colorPrimary: "#ef7158", // Set your primary color here
+            },
+          }}
+        >
+          <Calendar cellRender={cellRender} />
+        </ConfigProvider>
       </div>
     </div>
   );

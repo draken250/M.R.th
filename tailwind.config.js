@@ -14,7 +14,7 @@ export default {
         "khaki": "#c5b6ae",
 
         "main-color-dark": "#ef7158",
-        "main-body-dark": "#171717",
+        "main-body-dark": "#141414",
         "link-color-dark": "#63a3b2",
         "dark-gray-dark": "#232323",
         "text-dark": "#f1f1f1",
