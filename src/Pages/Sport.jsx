@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import Topbar from "../Components/Topbar";
 import { Chart } from "chart.js";
+import { Bar } from "recharts";
+import { LuClock } from "react-icons/lu";
+import StatisticDark from "../Components/StatisticDark";
 
 function Sport() {
   // const heartBeatChart = new Chart(document.getElementById("heartBeatChart"), {
@@ -175,47 +178,59 @@ function Sport() {
   return (
     <div className="flex flex-col items-start justify-start bg-main-body dark:bg-main-body-dark">
       <Topbar />
-      <div>
-        <div class="container mx-auto p-6 lg:p-10">
-          <div class="container ">
-            <div class="flex items-center justify-between mb-6">
+      <div className="w-full">
+        <div class=" mx-auto p-6 lg:p-10 w-full text-dark-gray-dark dark:text-white">
+          <div class=" ">
+            <div class="flex items-center justify-between mb-6 ">
               <div class="welcome">
-                <p class="text-md">Goodmorning</p>
-                <p class="text-2xl">Welcome back!</p>
+                <p class="text-md text-opacity-50">Goodmorning</p>
+                <p class="text-2xl font-medium">Welcome back!</p>
               </div>
-              <div class="profile flex gap-6">
+              <div class="profile flex gap-9">
                 <div class="data">
-                  <p class="text-sm">weight balance</p>
-                  <p class="bold">73kg</p>
+                  <p class="text-base font-medium opacity-65">Weight balance</p>
+                  <p class="bold opacity-65">
+                    <span className="font-medium text-xl opacity-100">73</span>
+                    kg
+                  </p>
                 </div>
                 <div class="data">
-                  <p class="text-sm">Heart rate</p>
-                  <p class="bold">90bpm</p>
+                  <p class="text-base font-medium opacity-65">Heart rate</p>
+                  <p class="bold opacity-65">
+                    <span className="font-medium text-xl opacity-100">90</span>
+                    bpm
+                  </p>
                 </div>
                 <div class="data">
-                  <p class="text-sm">Hydration level</p>
-                  <p class="bold">86%</p>
+                  <p class="text-base font-medium opacity-65">
+                    Hydration level
+                  </p>
+                  <p class="bold opacity-65">
+                    <span className="font-medium text-xl opacity-100">86</span>%
+                  </p>
                 </div>
                 <div class="data">
-                  <p class="text-sm">Blood Presure</p>
-                  <p class="bold">11</p>
+                  <p class="text-base font-medium opacity-65">Blood Presure</p>
+                  <p class="bold opacity-65">
+                    <span className="font-medium text-xl opacity-100">11</span>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class=" flex gap-4">
-            <div class="bg-gray-800 rounded-lg p-6 flex flex-col justify-between w-2/3">
+            <div class="bg-white dark:bg-dark-gray-dark rounded-lg p-6 flex flex-col justify-between w-2/3">
               <div class="flex items-center justify-between">
                 <div>
-                  <p class=" text-2xl font-bold">Calisthenics Workout</p>
-                  <p class="text-gray-400">
+                  <p class=" text-2xl font-medium">Calisthenics Workout</p>
+                  <p class=" text-dark-gray-dark/80">
                     the next biggest thing in next door lorem
                   </p>
                 </div>
                 <div class="flex gap-2">
                   <select
-                    class="bg-transparent hover:bg-gray-600 items-center px-4 py-2 rounded-md text-sm border"
+                    class="bg-dark-gray dark:bg-[#383838] items-center px-4 py-2 rounded-md text-sm"
                     name="workout"
                     id=""
                   >
@@ -225,41 +240,28 @@ function Sport() {
                   </select>
 
                   {/* <!-- change needed on the color of button --> */}
-                  <button class="bg-orange-400 hover:bg-orange-600 px-4 py-2 rounded-md text-sm font-medium">
+                  <button class="bg-main-color text-white px-4 py-2 rounded-md text-sm font-medium">
                     + Add Workout
                   </button>
                 </div>
               </div>
 
               <div class="flex gap-2 justify-between items-center mt-4">
-                <div class=" w-1/2 text-white p-4 border border-slate-600 rounded-lg shadow-lg space-y-4">
+                <div class=" w-1/2 p-4 border border-stone-200 dark:border-stone-500/40 rounded-lg shadow-lg space-y-4">
                   {/* <!-- Icon and Progress --> */}
                   <div class="flex justify-between items-center">
                     <div class=" flex flex-col gap-2 ">
                       <img class="w-8 h-8" src="../public/favicon.png" alt="" />
                       <span class="text-sm font-medium">Progress</span>
                       <h3 class="text-lg font-semibold">Upper Body</h3>
-                      <div class="flex items-center space-x-4 text-sm text-gray-400">
+                      <div class="flex items-center space-x-4 text-sm ">
                         <div class="flex items-center space-x-1">
-                          <span class="bg-gray-500 text-gray-200 px-2 py-1 rounded-md">
+                          <span class="bg-dark-gray text-dark-gray-dark dark:bg-[#303030] dark:text-dark-gray/90 px-2 py-1 rounded-md">
                             Biceps
                           </span>
                         </div>
                         <div class="flex items-center space-x-1">
-                          <svg
-                            xmlns="../../public/clock-lines-svgrepo-com.svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="w-4 h-4"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="M8.25 15h7.5M8.25 12h7.5M8.25 9h7.5M3.75 15h.008v.008H3.75v-.008zM3.75 12h.008v.008H3.75v-.008zM3.75 9h.008v.008H3.75V9zm16.5 6h.008v.008H20.25v-.008zm0-3h.008v.008H20.25v-.008zm0-3h.008v.008H20.25V9z"
-                            />
-                          </svg>
+                          <LuClock />
                           <span>2 hours</span>
                         </div>
                       </div>
@@ -267,17 +269,17 @@ function Sport() {
 
                     <div class="relative w-24 h-24">
                       <svg
-                        class="absolute top-0 left-0 w-full h-full transform -rotate-90"
+                        class="absolute top-0 left-0 w-24 h-24 p-1 transform -rotate-90"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 36 36"
                       >
                         <circle
-                          class="stroke-gray-700"
+                          class="stroke-stone-300 dark:dark:stroke-[#303030]"
                           cx="18"
                           cy="18"
                           r="16"
                           fill="none"
-                          stroke-width="2"
+                          stroke-width="3"
                         />
                         <circle
                           class="stroke-[#F29885]"
@@ -285,9 +287,9 @@ function Sport() {
                           cy="18"
                           r="16"
                           fill="none"
-                          stroke-width="2"
-                          stroke-dasharray="100"
-                          stroke-dashoffset="41"
+                          stroke-width="3"
+                          stroke-dasharray="101"
+                          stroke-dashoffset="59"
                         />
                       </svg>
                       <div class="absolute inset-0 flex items-center justify-center">
@@ -301,7 +303,7 @@ function Sport() {
                   {/* <!-- Details --> */}
 
                   {/* <!-- Button --> */}
-                  <button class="w-full bg-[#f0f8ff26] text-white py-2 px-4 rounded-md mt-4 flex items-center justify-between">
+                  <button class="w-full bg-dark-gray text-dark-gray-dark dark:bg-[#303030] dark:text-text-dark  py-2 px-4 rounded-md mt-4 flex items-center justify-between">
                     <span>Continue the exercise</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -320,34 +322,21 @@ function Sport() {
                   </button>
                 </div>
 
-                <div class="w-1/2 text-white p-4 border border-slate-600 rounded-lg shadow-lg space-y-4">
+                <div class="w-1/2 p-4 border border-stone-200 dark:border-stone-500/40 rounded-lg shadow-lg space-y-4">
                   {/* <!-- Icon and Progress --> */}
                   <div class="flex justify-between items-center">
                     <div class=" flex flex-col gap-2 ">
                       <img class="w-8 h-8" src="../public/favicon.png" alt="" />
                       <span class="text-sm font-medium">Progress</span>
                       <h3 class="text-lg font-semibold">Lower Body</h3>
-                      <div class="flex items-center space-x-4 text-sm text-gray-400">
+                      <div class="flex items-center space-x-4 text-sm ">
                         <div class="flex items-center space-x-1">
-                          <span class="bg-gray-500 text-gray-200 px-2 py-1 rounded-md">
+                          <span class="bg-dark-gray text-dark-gray-dark dark:bg-[#303030] dark:text-dark-gray/90 px-2 py-1 rounded-md">
                             Cardio
                           </span>
                         </div>
                         <div class="flex items-center space-x-1">
-                          <svg
-                            xmlns="../../public/clock-lines-svgrepo-com.svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="w-4 h-4"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="M8.25 15h7.5M8.25 12h7.5M8.25 9h7.5M3.75 15h.008v.008H3.75v-.008zM3.75 12h.008v.008H3.75v-.008zM3.75 9h.008v.008H3.75V9zm16.5 6h.008v.008H20.25v-.008zm0-3h.008v.008H20.25v-.008zm0-3h.008v.008H20.25V9z"
-                            />
-                          </svg>
+                          <LuClock />
                           <span>1.5 hours</span>
                         </div>
                       </div>
@@ -355,17 +344,17 @@ function Sport() {
 
                     <div class="relative w-24 h-24">
                       <svg
-                        class="absolute top-0 left-0 w-full h-full transform -rotate-90"
+                        class="absolute top-0 left-0 w-24 h-24 p-1 transform -rotate-90"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 36 36"
                       >
                         <circle
-                          class="stroke-gray-700"
+                          class="stroke-stone-300 dark:stroke-[#303030]"
                           cx="18"
                           cy="18"
                           r="16"
                           fill="none"
-                          stroke-width="2"
+                          stroke-width="3"
                         />
                         <circle
                           class="stroke-blue-500"
@@ -373,9 +362,9 @@ function Sport() {
                           cy="18"
                           r="16"
                           fill="none"
-                          stroke-width="2"
-                          stroke-dasharray="100"
-                          stroke-dashoffset="11"
+                          stroke-width="3"
+                          stroke-dasharray="101"
+                          stroke-dashoffset="59"
                         />
                       </svg>
                       <div class="absolute inset-0 flex items-center justify-center">
@@ -389,7 +378,7 @@ function Sport() {
                   {/* <!-- Details --> */}
 
                   {/* <!-- Button --> */}
-                  <button class="w-full bg-[#f0f8ff26] text-white py-2 px-4 rounded-md mt-4 flex items-center justify-between">
+                  <button class="w-full bg-dark-gray text-dark-gray-dark dark:bg-[#303030] dark:text-text-dark  py-2 px-4 rounded-md mt-4 flex items-center justify-between">
                     <span>Continue the exercise</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -411,41 +400,41 @@ function Sport() {
             </div>
 
             <div class=" rounded-lg w-1/3">
-              <div class="   text-white  rounded-lg">
-                <h2 class="text-lg font-semibold mb-4">
+              <div class="text-dark-gray-dark dark:text-text-dark rounded-lg">
+                <h2 class="text-lg font-medium mb-3 opacity-65">
                   Fitness Goal Building Your Fitness:
                 </h2>
 
                 {/* <!-- Fitness Item 1 --> */}
-                <div class="border border-slate-600 flex items-center bg-gray-800 rounded-lg p-4 mb-3">
-                  <div class="bg-gray-700 text-center text-sm font-bold text-white py-1 px-3 rounded-lg w-16">
+                <div class="flex items-center bg-white dark:bg-dark-gray-dark rounded-lg p-4 mb-3">
+                  <div class="bg-dark-gray text-dark-gray-dark dark:bg-[#383838] dark:text-dark-gray text-center text-sm font-bold py-1 px-3 rounded-lg w-16">
                     10 Min
                   </div>
                   <div class="ml-4 flex-1">
                     <h3 class="font-semibold">ABS& Stretch</h3>
-                    <p class="text-sm text-gray-400">10 min / day</p>
+                    <p class="text-sm opacity-50">10 min / day</p>
                   </div>
                 </div>
 
                 {/* <!-- Fitness Item 2 --> */}
-                <div class="flex border border-slate-600 items-center bg-gray-800 rounded-lg p-4 mb-3">
-                  <div class="bg-gray-700 text-center text-sm font-bold text-white py-1 px-3 rounded-lg w-16">
+                <div class="flex items-center bg-white dark:bg-dark-gray-dark rounded-lg p-4 mb-3">
+                  <div class="bg-dark-gray text-dark-gray-dark dark:bg-[#383838] dark:text-dark-gray text-center text-sm font-bold py-1 px-3 rounded-lg w-16">
                     12 Sets
                   </div>
                   <div class="ml-4 flex-1">
                     <h3 class="font-semibold">Side planks</h3>
-                    <p class="text-sm text-gray-400">12 sets / day</p>
+                    <p class="text-sm opacity-50">12 sets / day</p>
                   </div>
                 </div>
 
                 {/* <!-- Fitness Item 3 --> */}
-                <div class="flex border border-slate-600 items-center bg-gray-800 rounded-lg p-4">
-                  <div class="bg-gray-700 text-center text-sm font-bold text-white py-1 px-3 rounded-lg w-16">
+                <div class="flex items-center bg-white dark:bg-dark-gray-dark rounded-lg p-4 mb-3">
+                  <div class="bg-dark-gray text-dark-gray-dark dark:bg-[#383838] dark:text-dark-gray text-center text-sm font-bold py-1 px-3 rounded-lg w-16">
                     10 Sets
                   </div>
                   <div class="ml-4 flex-1">
                     <h3 class="font-semibold">Rope lifting</h3>
-                    <p class="text-sm text-gray-400">10 sets / day</p>
+                    <p class="text-sm opacity-50 ">10 sets / day</p>
                   </div>
                 </div>
               </div>
@@ -453,11 +442,11 @@ function Sport() {
           </div>
 
           <div class="flex w-full gap-4">
-            <div class="Statistics bg-gray-800 mt-4 p-4 rounded-lg w-1/2">
+            <div class="Statistics bg-white dark:bg-dark-gray-dark mt-4 p-4 rounded-lg w-1/2">
               <div class="flex justify-between">
                 <h1>Workout Statistics</h1>
                 <select
-                  class="bg-transparent hover:bg-gray-600 items-center px-4 py-2 rounded-md text-sm border"
+                  class="bg-dark-gray dark:bg-[#383838] items-center px-4 py-2 rounded-md text-sm"
                   name="workout"
                   id=""
                 >
@@ -467,13 +456,14 @@ function Sport() {
                 </select>
               </div>
               <div class="workout-chart">
-                <canvas id="workoutChart"></canvas>
+                {/* <canvas id="workoutChart"></canvas> */}
+                <StatisticDark />
               </div>
             </div>
-            <div class="bg-gray-800 mt-4 p-4 rounded-lg w-1/2">
-              <div class="mb-4 flex justify-between">
+            <div class="bg-white dark:bg-dark-gray-dark mt-4 p-4 rounded-lg w-1/2">
+              <div class="mb-4 flex justify-between items-center">
                 <h1>Run Activity</h1>
-                <button class=" flex bg-gray-700 hover:bg-gray-600 px-6 py-2 rounded-md text-sm gap-2   justify-between">
+                <button class=" flex bg-dark-gray dark:bg-[#383838]  px-6 py-2 rounded-md text-sm gap-2   justify-between">
                   <span>View Details</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -492,14 +482,14 @@ function Sport() {
                 </button>
               </div>
 
-              <div class="flex justify-between">
+              <div class="flex justify-between items-center gap-6">
                 <div class="w-1/2">
                   <iframe
-                    class=" rounded-lg"
+                    class=" rounded-lg w-full"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12419.922228035053!2d30.101183149999997!3d-1.8814776500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2srw!4v1733970555386!5m2!1sen!2srw"
                     width="250"
                     height="250"
-                    style={{border:0}}
+                    style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
@@ -509,7 +499,7 @@ function Sport() {
                   <p>Yesterday - 6:30 AM -7:30 AM</p>
                   <p>running from home to alu</p>
                   <p>120 kcal. 2.0 km</p>
-                  <span class="border-b border-gray-600"></span>
+                  <span class="border-b border-stone-300 dark:border-stone-400/30"></span>
                   <table class=" w-full">
                     <tr>
                       <td>total steps</td>
@@ -529,12 +519,12 @@ function Sport() {
             </div>
           </div>
 
-          <div class="bg-gray-800 rounded-lg p-6 mt-6">
-            <h2 class="text-xl font-bold mb-4">My Exercise</h2>
+          <div class="bg-white dark:bg-dark-gray-dark rounded-lg p-6 mt-6">
+            <h2 class="text-lg font-semi mb-4">My Exercise</h2>
             <div class="overflow-x-auto">
               <table class="w-full table-auto">
                 <thead>
-                  <tr class="bg-gray-700">
+                  <tr class="bg-stone-200 dark:bg-[#383838]">
                     <th class="px-4 py-2 text-left">Name of Exercise</th>
                     <th class="px-4 py-2 text-left">Set</th>
                     <th class="px-4 py-2 text-left">Reps</th>
@@ -544,29 +534,29 @@ function Sport() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="border-b border-gray-700">
+                  <tr class="border-b border-stone-200 dark:border-stone-600/40">
                     <td class="px-4 py-2">Biceps and Chest</td>
                     <td class="px-4 py-2">15 Sets</td>
                     <td class="px-4 py-2">15-20 Repetition</td>
                     <td class="px-4 py-2">50 kg-60 kg</td>
                     <td class="px-4 py-2">150 Cal</td>
-                    <td class="px-4 py-2 text-green-500">Complete</td>
+                    <td class="px-4 py-2 text-green-700">Complete</td>
                   </tr>
-                  <tr class="border-b border-gray-700">
+                  <tr class="border-b border-stone-200 dark:border-stone-600/40">
                     <td class="px-4 py-2">Biceps and Chest</td>
                     <td class="px-4 py-2">15 Sets</td>
                     <td class="px-4 py-2">15-20 Repetition</td>
                     <td class="px-4 py-2">50 kg-60 kg</td>
                     <td class="px-4 py-2">150 Cal</td>
-                    <td class="px-4 py-2 text-green-500">Complete</td>
+                    <td class="px-4 py-2 text-green-700">Complete</td>
                   </tr>
-                  <tr class="border-b border-gray-700">
+                  <tr class="border-b border-stone-200 dark:border-stone-600/40">
                     <td class="px-4 py-2">Biceps and Chest</td>
                     <td class="px-4 py-2">15 Sets</td>
                     <td class="px-4 py-2">15-20 Repetition</td>
                     <td class="px-4 py-2">50 kg-60 kg</td>
                     <td class="px-4 py-2">150 Cal</td>
-                    <td class="px-4 py-2 text-green-500 bg-gray-500 rounded-lg justify-center">
+                    <td class="px-4 py-2 text-green-700 rounded-lg justify-center">
                       Complete
                     </td>
                   </tr>
