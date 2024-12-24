@@ -197,7 +197,7 @@ function Sport() {
                 <div class="data">
                   <p class="text-base font-medium opacity-65">Heart rate</p>
                   <p class="bold opacity-65">
-                    <span className="font-medium text-xl opacity-100">90</span>
+                    <span className="font-medium text-xl  text-white">90</span>
                     bpm
                   </p>
                 </div>

@@ -56,13 +56,13 @@ function Overview() {
                   7,657
                   <br />
                   <span className="font-normal text-lg">steps</span>
-                  <img src="./shoes.png" className="absolute top-0 bottom-0 my-auto right-[20px] max-2xl:right-5 h-[80%]" />
+                  <img src="./shoes.png" className=" absolute top-0 bottom-0 my-auto right-[20px] max-2xl:right-5 h-[80%]" />
                 </div>
                 <div class="workouts relative max-2xl:w-full max-2xl:h-[130px] max-2xl:aspect-video bg-[#f0c3e2] p-5 text-2xl font-semibold overflow-clip rounded-3xl flex-1 flex flex-col items-start justify-center">
                   4,96 km
                   <br />
                   <span className="font-normal text-lg">workouts</span>
-                  <img src="./bell.png" className="absolute top-0 bottom-0 my-auto right-[20px] max-2xl:right-5 h-[60%]" />
+                  <img src="./bell.png" className="absolute top-0 bottom-0 my-auto right-[20px] max-2xl:right-5 h-[50%]" />
                 </div>
               </div>
             </div>
